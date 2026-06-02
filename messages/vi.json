@@ -1,0 +1,47 @@
+{
+  "Nav": {
+    "about": "Giới Thiệu",
+    "students": "Danh Sách",
+    "reports": "Báo Cáo",
+    "journal": "Bản Tin",
+    "contact": "Liên Hệ",
+    "donate": "Quyên Góp",
+    "donateNow": "Quyên góp ngay",
+    "language": "Ngôn ngữ",
+    "switchToEn": "Switch to English",
+    "switchToVi": "Chuyển sang Tiếng Việt"
+  },
+  "Footer": {
+    "slogan": "TỪ HY VỌNG ĐẾN TƯƠNG LAI",
+    "tagline": "TRAO CƠ HỘI HÔM NAY - ƯƠM MẦM NGÀY MAI",
+    "contactInfo": "Thông tin liên hệ",
+    "address": "595/6/21 Quốc Lộ 13, Khu Phố 3, Phường Hiệp Bình, TP. Thủ Đức, TP. Hồ Chí Minh, Việt Nam",
+    "aboutUs": "Giới Thiệu",
+    "vision": "Tầm nhìn",
+    "mission": "Sứ mệnh",
+    "contact": "Liên hệ",
+    "history": "Lịch sử",
+    "activities": "Hoạt Động",
+    "finance": "Tài chính",
+    "housing": "An cư",
+    "mentoring": "Cố vấn",
+    "practicalLab": "Thực chiến",
+    "copyright": "© 2026 C4L Foundation. All rights reserved.",
+    "motto": "Đầu tư vào con người – tạo ra thế hệ tự thân và tử tế."
+  },
+  "Loading": {
+    "title": "Đang kết nối...",
+    "sub": "Đồng hành phát triển năng lực & tư duy tự chủ"
+  },
+  "Error": {
+    "title": "Đã xảy ra lỗi kết nối",
+    "description": "Hệ thống gặp sự cố không mong muốn trong lúc truyền tải dữ liệu.",
+    "retry": "Thử lại",
+    "goHome": "Quay lại Trang chủ"
+  },
+  "NotFound": {
+    "title": "Không tìm thấy nội dung",
+    "description": "Trang bạn tìm kiếm không tồn tại hoặc đã được chuyển sang đường dẫn khác.",
+    "goHome": "Quay lại Trang chủ"
+  }
+}

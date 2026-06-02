@@ -1,0 +1,47 @@
+{
+  "Nav": {
+    "about": "About",
+    "students": "Students",
+    "reports": "Reports",
+    "journal": "Journal",
+    "contact": "Contact",
+    "donate": "Donate",
+    "donateNow": "Donate Now",
+    "language": "Language",
+    "switchToEn": "Switch to English",
+    "switchToVi": "Chuyển sang Tiếng Việt"
+  },
+  "Footer": {
+    "slogan": "FROM POTENTIAL TO PROFESSIONAL",
+    "tagline": "INVEST IN PEOPLE - EMBRACE TOMORROW",
+    "contactInfo": "Contact Information",
+    "address": "595/6/21 Quoc Lo 13, Khu Pho 3, Phuong Hiep Binh, TP. Thu Duc, Ho Chi Minh City, Vietnam",
+    "aboutUs": "About Us",
+    "vision": "Vision",
+    "mission": "Mission",
+    "contact": "Contact",
+    "history": "History",
+    "activities": "Activities",
+    "finance": "Finance",
+    "housing": "Housing",
+    "mentoring": "Mentoring",
+    "practicalLab": "Practical Lab",
+    "copyright": "© 2026 C4L Foundation. All rights reserved.",
+    "motto": "Investing in people – building a generation of self-made and kind-hearted individuals."
+  },
+  "Loading": {
+    "title": "Connecting...",
+    "sub": "Investing in people – Empowering self-reliance & professional growth"
+  },
+  "Error": {
+    "title": "Connection Error",
+    "description": "An unexpected issue occurred while transferring data.",
+    "retry": "Try Again",
+    "goHome": "Back to Home"
+  },
+  "NotFound": {
+    "title": "Content Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "goHome": "Back to Home"
+  }
+}
