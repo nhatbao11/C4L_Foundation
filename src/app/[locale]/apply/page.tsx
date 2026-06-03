@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import ApplyHero from "@/components/apply/ApplyHero";
 import StudentStats from "@/components/apply/StudentStats";
 import StudentTable from "@/components/apply/StudentTable";
-import RecruitmentFormSection from "@/components/apply/RecruitmentFormSection";
 
 export default function Apply() {
   return (
@@ -16,8 +15,6 @@ export default function Apply() {
       <StudentStats />
 
       <StudentTable />
-
-      <RecruitmentFormSection />
 
       <Footer />
     </div>

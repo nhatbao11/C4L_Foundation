@@ -33,8 +33,8 @@ export default function HeritageSection() {
             <h2 className="font-display font-extrabold text-2xl md:text-3xl lg:text-4xl text-slate-900 mt-5 uppercase tracking-wide leading-tight">
               {lang === "vi" ? "Tiếp Nối & Phát Triển Con Người" : "Succeeding & Developing Human Potential"}
             </h2>
-            <div className="w-16 h-1 bg-[#15803D] mt-5 rounded-full"/>
-            
+            <div className="w-16 h-1 bg-[#15803D] mt-5 rounded-full" />
+
             <div className="mt-8 space-y-5 text-slate-600 text-xs md:text-sm lg:text-base leading-relaxed font-normal">
               <p>
                 {lang === "vi" ? (

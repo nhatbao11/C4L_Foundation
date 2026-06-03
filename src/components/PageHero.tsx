@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Badge from "@/components/Badge";
 
 interface PageHeroProps {
   badge: string;
@@ -9,6 +10,7 @@ interface PageHeroProps {
   description: string;
   backgroundImage?: string;
   isFullHeight?: boolean;
+  isCompact?: boolean;
   children?: React.ReactNode;
 }
 
@@ -18,6 +20,7 @@ export default function PageHero({
   description,
   backgroundImage,
   isFullHeight = false,
+  isCompact = false,
   children,
 }: PageHeroProps) {
   if (isFullHeight) {
@@ -40,9 +43,7 @@ export default function PageHero({
         <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none z-0" />
 
         <div className="relative flex-1 flex flex-col justify-center items-center max-w-5xl mx-auto px-6 pt-20 pb-4 lg:pt-36 lg:pb-16 text-center z-10">
-          <span className="text-[10px] md:text-xs font-bold text-white/70 bg-white/10 border border-white/20 px-3 py-1.5 md:px-4 md:py-2 rounded-full uppercase tracking-widest font-mono">
-            {badge}
-          </span>
+          <Badge>{badge}</Badge>
           <h1 className="font-display text-2xl md:text-5xl lg:text-6xl font-black text-white mt-4 md:mt-6 leading-tight uppercase tracking-tight">
             {title}
           </h1>
@@ -58,8 +59,12 @@ export default function PageHero({
   }
 
   // Standard Header Banner
+  const paddingClass = isCompact 
+    ? "pt-24 pb-8 md:pt-28 md:pb-10" 
+    : "pt-36 pb-16 md:pt-44 md:pb-24";
+
   return (
-    <section className="relative overflow-hidden bg-slate-950 text-white pt-36 pb-16 md:pt-44 md:pb-24 text-center">
+    <section className={`relative overflow-hidden bg-slate-950 text-white ${paddingClass} text-center`}>
       {/* Background color tint overlay to match brand colors */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0e4b29]/95 via-[#0e4b29]/80 to-[#0b381e]/95 z-0" />
 
@@ -67,9 +72,7 @@ export default function PageHero({
       <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none z-0" />
 
       <div className="relative max-w-4xl mx-auto px-6 z-10">
-        <span className="text-[10px] md:text-xs font-bold text-white/70 bg-white/10 border border-white/20 px-3 py-1.5 md:px-4 md:py-2 rounded-full uppercase tracking-widest font-mono">
-          {badge}
-        </span>
+        <Badge>{badge}</Badge>
         <h1 className="font-display text-3xl md:text-5xl font-black text-white mt-6 uppercase tracking-tight">
           {title}
         </h1>

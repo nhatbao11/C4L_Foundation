@@ -126,7 +126,7 @@ export default function ReportsList() {
   }, [reports]);
 
   return (
-    <section className="max-w-7xl mx-auto px-6 mt-10">
+    <section className="max-w-7xl mx-auto px-6 mt-10 pb-28">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-200 pb-5">
         <div className="flex items-center gap-2">
           <svg className="w-5 h-5 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">

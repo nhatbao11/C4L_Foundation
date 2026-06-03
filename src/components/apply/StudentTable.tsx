@@ -88,7 +88,7 @@ export default function StudentTable() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-6 mt-8">
+    <section className="max-w-7xl mx-auto px-6 mt-8 pb-28">
       {/* Filters bar */}
       <div className="flex flex-col md:flex-row gap-4 mb-6">
         {/* Search bar */}

@@ -21,7 +21,7 @@ export default function ContactInfo() {
         <div className="flex flex-col gap-5">
           {/* Address Card (Fully clickable to Google Maps) */}
           <a
-            href="https://maps.app.goo.gl/uYn6R2u9G1zQy64L9"
+            href="https://www.google.com/maps/search/?api=1&query=585/6/21+Qu%E1%BB%91c+L%E1%BB%99+13,+Hi%E1%BB%87p+B%C3%ACnh+Ph%C6%B0%E1%BB%9Bc,+Th%E1%BB%A7+%C4%90%E1%BB%A9c,+H%E1%BB%93+Ch%C3%AD+Minh"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-5 bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:-translate-y-1.5 hover:shadow-md hover:border-emerald-500/30 transition-all duration-300 group"
@@ -38,8 +38,8 @@ export default function ContactInfo() {
               </span>
               <p className="text-slate-500 text-xs md:text-sm font-medium leading-relaxed group-hover:text-slate-600 transition-colors">
                 {lang === "vi"
-                  ? "595/6/21 Quốc Lộ 13, Khu Phố 3, Phường Hiệp Bình, TP. Thủ Đức, TP. Hồ Chí Minh, Việt Nam"
-                  : "595/6/21 National Route 13, Quarter 3, Hiep Binh Ward, Thu Duc City, Ho Chi Minh City, Vietnam"}
+                  ? "585/6/21 Quốc Lộ 13, Khu Phố 3, Phường Hiệp Bình, TP. Thủ Đức, TP. Hồ Chí Minh, Việt Nam, 70000"
+                  : "585/6/21 National Route 13, Quarter 3, Hiep Binh Ward, Thu Duc City, Ho Chi Minh City, Vietnam, 70000"}
               </p>
               <span className="text-[10px] text-emerald-600 font-bold uppercase tracking-wider mt-1 inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-[-5px] group-hover:translate-x-0">
                 {lang === "vi" ? "Xem bản đồ" : "View map"} &rarr;
@@ -70,7 +70,7 @@ export default function ContactInfo() {
 
           {/* Hotline Card (Fully clickable to Tel) */}
           <a
-            href="tel:0901315630"
+            href="tel:0981313630"
             className="flex items-start gap-5 bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:-translate-y-1.5 hover:shadow-md hover:border-amber-500/30 transition-all duration-300 group"
           >
             <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 group-hover:bg-amber-600 group-hover:text-white flex items-center justify-center flex-shrink-0 shadow-sm transition-all duration-300 group-hover:scale-105">
@@ -81,7 +81,7 @@ export default function ContactInfo() {
             <div className="flex flex-col gap-1.5">
               <span className="font-bold text-slate-900 text-sm group-hover:text-amber-700 transition-colors">Hotline</span>
               <span className="text-amber-600 font-bold text-xs md:text-sm underline decoration-amber-200 underline-offset-4 group-hover:decoration-amber-500 group-hover:text-amber-800 transition-all">
-                090 131 5630
+                098 131 36 30
               </span>
               <span className="text-[10px] text-amber-600 font-bold uppercase tracking-wider mt-1 inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-[-5px] group-hover:translate-x-0">
                 {lang === "vi" ? "Gọi điện ngay" : "Call now"} &rarr;

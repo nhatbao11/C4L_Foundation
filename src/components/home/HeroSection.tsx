@@ -106,11 +106,17 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mt-5">
-            <Button href="/apply" variant="primary" className="w-full sm:w-auto px-6 py-3.5 lg:px-8 lg:py-4 text-xs lg:text-base font-bold shadow-md hover:shadow-lg transition-all rounded-full bg-[#15803D] hover:bg-[#166534] text-white text-center">
+            <Button href="/apply" variant="primary" className="w-full sm:w-auto px-6 py-3.5 lg:px-8 lg:py-4 text-xs lg:text-base text-center">
               {lang === "vi" ? "Ứng tuyển ngay" : "Apply now"}
+              <svg className="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-300 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
             </Button>
-            <Button href="/about" variant="outline" className="w-full sm:w-auto px-6 py-3.5 lg:px-8 lg:py-4 text-xs lg:text-base font-bold rounded-full border border-[#15803D] hover:border-[#166534] bg-white hover:bg-emerald-50/40 transition-all text-[#15803D] hover:text-[#166534] text-center">
+            <Button href="/about" variant="outline" className="w-full sm:w-auto px-6 py-3.5 lg:px-8 lg:py-4 text-xs lg:text-base text-center">
               {lang === "vi" ? "Tìm hiểu thêm" : "Learn more"}
+              <svg className="w-4 h-4 transform group-hover:translate-y-0.5 transition-transform duration-300 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
             </Button>
           </div>
         </div>

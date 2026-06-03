@@ -7,9 +7,10 @@ import type { Post } from "@/types";
 
 interface JournalGridProps {
   searchTerm: string;
+  selectedCategory: string;
 }
 
-export default function JournalGrid({ searchTerm }: JournalGridProps) {
+export default function JournalGrid({ searchTerm, selectedCategory }: JournalGridProps) {
   const { lang } = useLanguage();
 
   const posts: Post[] = [
@@ -138,22 +139,51 @@ export default function JournalGrid({ searchTerm }: JournalGridProps) {
   const filteredPosts = posts.filter((post) => {
     const title = lang === "vi" ? post.titleVi : post.titleEn;
     const excerpt = lang === "vi" ? post.excerptVi : post.excerptEn;
-    return (
+    const matchesSearch =
       title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      excerpt.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+      excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+
+    if (selectedCategory === "all") {
+      return matchesSearch;
+    }
+
+    // Map selectedCategory to tagEn
+    const categoryMap: { [key: string]: string } = {
+      announcement: "Announcement",
+      recruitment: "Recruitment",
+      list: "Student List",
+      event: "Event",
+      activity: "Activity",
+    };
+
+    const targetTag = categoryMap[selectedCategory];
+    const matchesCategory = post.tagEn === targetTag;
+
+    return matchesSearch && matchesCategory;
   });
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12">
+    <section className="max-w-7xl mx-auto px-6 py-12 md:py-16">
       {filteredPosts.length === 0 ? (
-        <div className="text-center py-16 text-slate-400 font-semibold">
-          {lang === "vi" ? "Không tìm thấy bài viết nào." : "No posts matched your search."}
+        <div className="text-center py-20 text-slate-400 bg-white border border-slate-100 rounded-3xl p-8 max-w-lg mx-auto shadow-sm">
+          <svg className="w-12 h-12 text-slate-300 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+          <span className="text-sm font-bold text-slate-500 block">
+            {lang === "vi" ? "Không tìm thấy bài viết nào phù hợp." : "No matching posts found."}
+          </span>
+          <span className="text-xs text-slate-400 mt-1 block">
+            {lang === "vi" ? "Thử thay đổi từ khóa hoặc bộ lọc của bạn." : "Try changing your keywords or filters."}
+          </span>
         </div>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-          {filteredPosts.map((post) => (
-            <JournalCard key={post.id} post={post} lang={lang} />
+          {/* Latest/First post rendered as Featured (full-width banner) */}
+          <JournalCard post={filteredPosts[0]} lang={lang} isFeatured={true} />
+          
+          {/* Remaining posts in 2-column layout */}
+          {filteredPosts.slice(1).map((post) => (
+            <JournalCard key={post.id} post={post} lang={lang} isFeatured={false} />
           ))}
         </div>
       )}

@@ -5,7 +5,6 @@ import AboutHero from "@/components/about/AboutHero";
 import VisionMissionSection from "@/components/about/VisionMissionSection";
 import CoreValuesSection from "@/components/about/CoreValuesSection";
 import Hybrid4LSection from "@/components/about/Hybrid4LSection";
-import HeritageSection from "@/components/about/HeritageSection";
 import { notFound } from "next/navigation";
 
 export default function About() {
@@ -19,8 +18,6 @@ export default function About() {
       <Navbar />
 
       <AboutHero />
-
-      <HeritageSection />
 
       <VisionMissionSection />
 

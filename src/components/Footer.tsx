@@ -13,19 +13,30 @@ export default function Footer() {
       {/* Subtle top decoration grid lines */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-white/5"></div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 relative">
+      {/* Subtle grid pattern layer */}
+      <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.06] pointer-events-none z-0" />
+
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 relative z-10">
 
         {/* Left Column: Overlapping Logo card and slogan */}
         <div className="md:col-span-4 flex flex-col items-start gap-6">
-          {/* Overlapping White Box Logo with high z-index and hover effect */}
-          <div className="bg-white p-3.5 rounded-2xl shadow-2xl -mt-28 relative z-20 border border-slate-100 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
-            <Image
-              src="/logo.jpg"
-              alt="C4L Logo"
-              width={84}
-              height={84}
-              className="rounded-full object-cover"
-            />
+          {/* Overlapping White Box Logo - Highly prominent raised card with default glow & active gradient ring */}
+          <div className="bg-white p-4 rounded-[28px] shadow-[0_20px_50px_rgba(16,185,129,0.32)] -mt-28 relative z-20 border-2 border-emerald-500/30 transition-all duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_25px_60px_rgba(16,185,129,0.45)] group overflow-hidden">
+            {/* Active Ambient Background Glow inside the card */}
+            <div className="absolute inset-0.5 rounded-2xl bg-gradient-to-tr from-[#15803D] to-emerald-400 opacity-10 group-hover:opacity-20 transition-opacity duration-500 -z-10" />
+
+            {/* Premium active gradient ring around the logo */}
+            <div className="relative p-1 bg-gradient-to-tr from-[#15803D] to-emerald-400 rounded-full shadow-sm">
+              <div className="bg-white p-0.5 rounded-full">
+                <Image
+                  src="/logo.jpg"
+                  alt="C4L Logo"
+                  width={80}
+                  height={80}
+                  className="rounded-full object-cover"
+                />
+              </div>
+            </div>
           </div>
  
           {/* Slogan & Branding */}
@@ -74,7 +85,7 @@ export default function Footer() {
               <svg className="w-4.5 h-4.5 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <a href="tel:0901315630" className="hover:text-white hover:underline transition-colors">090 131 5630</a>
+              <a href="tel:0981313630" className="hover:text-white hover:underline transition-colors">098 131 36 30</a>
             </div>
             <div className="flex items-start gap-3 leading-relaxed">
               <svg className="w-4.5 h-4.5 text-white flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

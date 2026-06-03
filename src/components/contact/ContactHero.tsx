@@ -18,6 +18,7 @@ export default function ContactHero() {
       badge={badge}
       title={title}
       description={description}
+      isCompact={true}
     />
   );
 }

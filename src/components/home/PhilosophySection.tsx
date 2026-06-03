@@ -1,123 +1,137 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageContext";
+import Badge from "@/components/Badge";
 
 export default function PhilosophySection() {
   const { lang } = useLanguage();
 
-  const corePillars = [
-    {
-      title: lang === "vi" ? "Professional Competence (Năng lực nghề nghiệp)" : "Professional Competence",
-      desc: lang === "vi"
-        ? "Trang bị kỹ năng thực chiến, tư duy giải quyết vấn đề, ngoại ngữ, Sales, Marketing, AI và E-commerce."
-        : "Hands-on skills, problem-solving mindset, English proficiency, AI tools, Sales, Marketing, and E-commerce."
-    },
-    {
-      title: lang === "vi" ? "Self-Reliance (Bản lĩnh & Tự lập)" : "Self-Reliance",
-      desc: lang === "vi"
-        ? "Quản trị bản thân, tài chính cá nhân, rèn luyện tính kỷ luật và nghị lực."
-        : "Self-management, personal finance, strict discipline, and resilience."
-    },
-    {
-      title: lang === "vi" ? "Ethical Foundation (Tử tế & Chính trực)" : "Ethical Foundation",
-      desc: lang === "vi"
-        ? "Trung thực, giữ cam kết và đề cao đạo đức nghề nghiệp chính trực."
-        : "Honesty, keeping commitments, and prioritizing professional ethics."
-    },
-    {
-      title: lang === "vi" ? "Pay-It-Forward Mindset (Tư duy Đáp đền)" : "Pay-It-Forward Mindset",
-      desc: lang === "vi"
-        ? "Trách nhiệm đóng góp tích cực lại cho xã hội và nâng đỡ thế hệ đàn em."
-        : "Responsibility to contribute back to society and uplift future generations."
-    }
-  ];
-
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-      {/* Left Column: Overlapping Images Layout (Rounded corners, playful offsets) */}
-      <div className="lg:col-span-6 relative flex items-center justify-center min-h-[420px] md:min-h-[500px] w-full">
-        {/* Main Background decorative circle */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] aspect-square rounded-full border-2 border-dashed border-slate-200 -z-10" />
+    <section className="relative bg-white py-24 md:py-32 overflow-hidden border-t border-slate-100">
+      
+      {/* Background grid design */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(16,185,129,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(16,185,129,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none z-0" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
 
-        {/* Larger Image Card */}
-        <div className="absolute top-0 left-6 w-[65%] aspect-[3/4] rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-slate-50 rotate-[-2deg] transition-all hover:rotate-0 duration-500 z-10">
-          <Image
-            src="/images/carousel-2.png"
-            alt="C4L Dorm Life"
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 50vw, 30vw"
-          />
-          {/* Flat Badge 'C4L Home' */}
-          <div className="absolute bottom-4 left-4 bg-emerald-600 text-white font-mono text-[10px] font-bold px-3 py-1.5 rounded-xl uppercase tracking-wider shadow-md">
-            C4L Home
-          </div>
-        </div>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 xl:px-20 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          {/* Left Column: Narrative and Brand Philosophy */}
+          <div className="lg:col-span-7 flex flex-col items-start gap-6 text-left">
+            <Badge variant="light">
+              {lang === "vi" ? "Triết lý hoạt động" : "Core Philosophy"}
+            </Badge>
 
-        {/* Smaller Overlapping Image Card */}
-        <div className="absolute bottom-0 right-6 w-[55%] aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-50 rotate-[3deg] transition-all hover:rotate-0 duration-500 z-20">
-          <Image
-            src="/images/carousel-3.png"
-            alt="Tech Lab Practical Working"
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 40vw, 25vw"
-          />
-          <div className="absolute top-4 right-4 bg-white/95 backdrop-blur text-slate-800 font-mono text-[9px] font-extrabold px-2.5 py-1 rounded-lg shadow border border-slate-100">
-            Tech Lab
-          </div>
-        </div>
-      </div>
+            <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-[#0e4b29] tracking-tight uppercase leading-tight">
+              {lang === "vi" ? (
+                <>
+                  Từ Tiềm Năng <br />
+                  <span className="text-emerald-600">Đến Tự Chủ</span>
+                </>
+              ) : (
+                <>
+                  From Potential <br />
+                  <span className="text-emerald-600">To Self-Reliance</span>
+                </>
+              )}
+            </h2>
 
-      {/* Right Column: Narrative and Checkboxes */}
-      <div className="lg:col-span-6 flex flex-col items-start gap-6 text-left">
-        <span className="text-xs font-bold text-[#15803D] uppercase tracking-widest font-mono">
-          {lang === "vi" ? "Chân Dung Sinh Viên C4L" : "C4L Output Portrait"}
-        </span>
+            <div className="w-12 h-1 bg-[#15803D] rounded-full mt-2" />
 
-        <h2 className="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight leading-none uppercase">
-          {lang === "vi" ? "Self-Made Professional" : "Self-Made Professional"}
-        </h2>
-
-        <p className="text-slate-600 text-sm md:text-base leading-relaxed font-normal">
-          {lang === "vi"
-            ? "Kế thừa và tiếp nối một phần từ Quỹ Tony Buổi Sáng, C4L đồng hành và đầu tư cơ hội, mentor cùng môi trường thực chiến để hỗ trợ sinh viên hoàn cảnh khó khăn rèn luyện bản thân, trưởng thành và phát triển năng lực qua 4 trụ cột:"
-            : "Inheriting and continuing a part of the Tony Buoi Sang Foundation's legacy, C4L accompanies and invests capital, opportunity, and mentorship to help underprivileged students train themselves, grow, and develop their capacities through 4 core pillars:"}
-        </p>
-
-        {/* Core Pillars List */}
-        <div className="w-full flex flex-col gap-4 mt-2">
-          {corePillars.map((item, idx) => (
-            <div key={idx} className="flex gap-4 p-4 rounded-2xl hover:bg-slate-50 transition-colors">
-              {/* Circle Icon Box */}
-              <div className="w-6 h-6 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[#15803D] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-3.5 h-3.5 fill-none stroke-current" strokeWidth="3" viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </div>
-              <div className="flex flex-col">
-                <h4 className="font-bold text-slate-900 text-sm md:text-base">
-                  {item.title}
-                </h4>
-                <p className="text-slate-500 text-xs md:text-sm mt-1 leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
+            <div className="space-y-4 text-slate-600 text-sm md:text-base leading-relaxed font-normal mt-2 max-w-2xl">
+              <p>
+                {lang === "vi"
+                  ? "Kế thừa và tiếp nối một phần sứ mệnh phát triển sinh viên từ Quỹ Tony Buổi Sáng, C4L định vị mình là một hệ sinh thái đầu tư vốn con người (Human Capital Investment Ecosystem), không đơn thuần là nơi trao tặng tiền học bổng."
+                  : "Inheriting and continuing a part of the student development mission from the Tony Buoi Sang Foundation, C4L defines itself as a human capital investment ecosystem, rather than a traditional charity fund."}
+              </p>
+              <p>
+                {lang === "vi"
+                  ? "Chúng tôi tin rằng sự giúp đỡ bền vững nhất là trao cơ hội, trang bị năng lực chuyên môn và rèn giũa bản lĩnh tự lập. C4L đồng hành đầu tư vốn học tập, môi trường Ký túc xá kỷ luật, đội ngũ Mentor chuyên gia cùng các dự án thực chiến tại Lab."
+                  : "We believe the most sustainable aid is providing opportunity, equipping students with professional competence, and building self-reliance. C4L invests study capital, disciplined housing, elite mentorship, and practical training."}
+              </p>
             </div>
-          ))}
-        </div>
 
-        {/* Bottom CTA */}
-        <div className="flex items-center gap-4 mt-4 pt-4 border-t border-slate-100 w-full">
-          <Link
-            href="/about"
-            className="px-6 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition-colors"
-          >
-            {lang === "vi" ? "Chi tiết chân dung đầu ra" : "Learn Output Standards"}
-          </Link>
+            <div className="mt-6">
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#0e4b29] hover:bg-[#15803D] text-white font-bold text-xs tracking-wider uppercase transition-all duration-300 shadow-md hover:-translate-y-0.5"
+              >
+                <span>{lang === "vi" ? "Tìm hiểu Mô hình & 4 Trụ cột" : "Explore Model & 4 Pillars"}</span>
+                <span>→</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Column: Premium Value Block Card */}
+          <div className="lg:col-span-5 w-full group">
+            <div className="bg-slate-50 border border-emerald-100 rounded-[2.5rem] p-8 md:p-10 shadow-sm relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:bg-white hover:border-emerald-500/20">
+              
+              {/* Card top gradient line */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-500 to-green-600" />
+
+              <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest font-mono block mb-2">
+                {lang === "vi" ? "Định vị thương hiệu" : "Brand Positioning"}
+              </span>
+              
+              <h3 className="font-display font-black text-xl text-[#0e4b29] uppercase tracking-wider mb-6">
+                {lang === "vi" ? "Đầu Tư Thực Chiến" : "Active Human Investment"}
+              </h3>
+
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[#15803D] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    ✓
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-sm">
+                      {lang === "vi" ? "Không ban phát một chiều" : "No Passive Charity"}
+                    </h4>
+                    <p className="text-slate-500 text-xs mt-1 leading-relaxed">
+                      {lang === "vi"
+                        ? "Học bổng đi kèm với các cam kết chỉ số KPIs rèn luyện định kỳ để tạo động lực nỗ lực."
+                        : "Scholarships are integrated with performance KPIs to foster commitment and effort."}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[#15803D] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    ✓
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-sm">
+                      {lang === "vi" ? "Đào tạo Self-Made Professionals" : "Building Self-Made Professionals"}
+                    </h4>
+                    <p className="text-slate-500 text-xs mt-1 leading-relaxed">
+                      {lang === "vi"
+                        ? "Sinh viên được trang bị kỹ năng chuyên môn khắt khe nhất để tự chủ tương lai."
+                        : "Students are equipped with critical professional skills to lead their own career paths."}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[#15803D] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    ✓
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-sm">
+                      {lang === "vi" ? "Tinh thần Đáp đền tiếp nối" : "Pay-It-Forward Mindset"}
+                    </h4>
+                    <p className="text-slate-500 text-xs mt-1 leading-relaxed">
+                      {lang === "vi"
+                        ? "Sinh viên khi trưởng thành tự nguyện đồng hành nâng đỡ thế hệ đàn em đi sau."
+                        : "Graduates willingly return to guide, mentor, and support the next cohort of students."}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
