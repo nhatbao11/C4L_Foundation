@@ -95,60 +95,56 @@ export default function PartnersSection() {
   ];
 
   return (
-    <section className="w-full py-12 overflow-hidden bg-white">
-      <div className="text-center mb-8">
-        <h2 className="font-display font-extrabold text-lg md:text-xl tracking-widest text-slate-800 uppercase">
+    <section className="w-full py-14 overflow-hidden bg-white">
+      <div className="text-center mb-10">
+        <h2 className="font-display font-extrabold text-sm md:text-base tracking-widest text-[#15803D] uppercase">
           {lang === "vi" ? "ĐƠN VỊ ĐỒNG HÀNH & TÀI TRỢ" : "ACCOMPANYING PARTNERS & SPONSORS"}
         </h2>
-        <div className="w-16 h-0.5 bg-[#15803D] mx-auto mt-2 rounded-full"></div>
+        <div className="w-12 h-0.5 bg-[#15803D]/30 mx-auto mt-2.5 rounded-full"></div>
       </div>
 
       {/* CSS Marquee Animation */}
       <style dangerouslySetInnerHTML={{
         __html: `
         @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          0% { transform: translate3d(0, 0, 0); }
+          100% { transform: translate3d(-100%, 0, 0); }
         }
-        .animate-marquee-loop {
+        .animate-marquee-smooth {
           display: flex;
-          width: max-content;
-          animation: marquee 30s linear infinite;
-        }
-        .animate-marquee-loop:hover {
-          animation-play-state: paused;
+          animation: marquee 35s linear infinite;
         }
       `}} />
 
       {/* Partners Logos Scrolling Marquee */}
-      <div className="relative w-full overflow-hidden py-4 border-y border-slate-100 bg-white">
+      <div className="relative w-full overflow-hidden py-4 border-y border-slate-100/80 bg-white">
         {/* Edge fading shadows for clean blend into white layout */}
-        <div className="absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute inset-y-0 right-0 w-28 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/90 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white via-white/90 to-transparent z-10 pointer-events-none"></div>
 
-        <div className="animate-marquee-loop flex gap-12 md:gap-16">
+        <div className="flex w-max">
           {/* Set 1 */}
-          <div className="flex gap-12 md:gap-16 items-center">
+          <div className="animate-marquee-smooth flex shrink-0 items-center">
             {partners.map((partner, idx) => (
               <div
                 key={`set1-${idx}`}
-                className={`flex items-center text-slate-400 font-mono tracking-widest filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-300 cursor-pointer ${partner.hoverClass}`}
+                className={`flex items-center px-5 py-2.5 mx-3.5 bg-[#F8FAFC]/80 border border-slate-200/40 rounded-full text-slate-500 font-display font-extrabold text-xs md:text-sm tracking-widest filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 hover:border-emerald-500/30 hover:bg-white hover:text-emerald-700 hover:shadow-md transition-all duration-300 cursor-pointer ${partner.hoverClass} transform-gpu`}
               >
                 {partner.icon}
-                <span className="font-extrabold text-xs md:text-sm">{partner.name}</span>
+                <span>{partner.name}</span>
               </div>
             ))}
           </div>
 
           {/* Set 2 (Duplicate for infinite seamless loop) */}
-          <div className="flex gap-12 md:gap-16 items-center">
+          <div className="animate-marquee-smooth flex shrink-0 items-center">
             {partners.map((partner, idx) => (
               <div
                 key={`set2-${idx}`}
-                className={`flex items-center text-slate-400 font-mono tracking-widest filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-300 cursor-pointer ${partner.hoverClass}`}
+                className={`flex items-center px-5 py-2.5 mx-3.5 bg-[#F8FAFC]/80 border border-slate-200/40 rounded-full text-slate-500 font-display font-extrabold text-xs md:text-sm tracking-widest filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 hover:border-emerald-500/30 hover:bg-white hover:text-emerald-700 hover:shadow-md transition-all duration-300 cursor-pointer ${partner.hoverClass} transform-gpu`}
               >
                 {partner.icon}
-                <span className="font-extrabold text-xs md:text-sm">{partner.name}</span>
+                <span>{partner.name}</span>
               </div>
             ))}
           </div>

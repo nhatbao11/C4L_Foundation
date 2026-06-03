@@ -105,24 +105,34 @@ export default function FaqSection() {
               <div
                 key={idx}
                 onClick={() => toggleIndex(idx)}
-                className="bg-[#F8FAFC] hover:bg-slate-100/60 border border-slate-200/40 rounded-2xl p-5 cursor-pointer transition-all duration-200 select-none shadow-sm"
+                className={`bg-[#F8FAFC] hover:bg-slate-100/60 border rounded-2xl p-5 cursor-pointer transition-all duration-300 ease-out select-none shadow-sm active:scale-[0.99] transform-gpu ${
+                  isOpen
+                    ? "border-emerald-500/30 bg-white shadow-md ring-1 ring-emerald-500/10"
+                    : "border-slate-200/40"
+                }`}
               >
                 {/* Accordion Row */}
                 <div className="flex items-center justify-between gap-4">
                   
                   {/* Left Circle Icon */}
-                  <div className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center flex-shrink-0 text-emerald-700 shadow-sm">
+                  <div className={`w-10 h-10 rounded-full border flex items-center justify-center flex-shrink-0 shadow-sm transition-all duration-300 ${
+                    isOpen
+                      ? "bg-emerald-50 border-emerald-150 text-emerald-600 scale-105"
+                      : "bg-white border-slate-200 text-emerald-700"
+                  }`}>
                     {faq.icon}
                   </div>
 
                   {/* Question Text */}
-                  <h3 className="font-display font-extrabold text-sm md:text-base text-slate-800 flex-grow text-left">
+                  <h3 className={`font-display font-extrabold text-sm md:text-base flex-grow text-left transition-colors duration-300 ${
+                    isOpen ? "text-emerald-950" : "text-slate-800"
+                  }`}>
                     {faq.q}
                   </h3>
 
                   {/* Chevron Icon */}
-                  <div className={`text-slate-400 w-5 h-5 flex items-center justify-center transition-transform duration-300 ${
-                    isOpen ? "rotate-180 text-emerald-600" : ""
+                  <div className={`text-slate-400 w-5 h-5 flex items-center justify-center transition-all duration-300 ${
+                    isOpen ? "rotate-180 text-emerald-600 scale-110" : ""
                   }`}>
                     <svg className="w-4 h-4 fill-none stroke-current" strokeWidth="2.5" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -132,12 +142,14 @@ export default function FaqSection() {
 
                 {/* Collapsible Answer */}
                 <div className={`grid transition-all duration-300 ease-in-out ${
-                  isOpen ? "grid-rows-[1fr] opacity-100 mt-4 pt-4 border-t border-slate-200/50" : "grid-rows-[0fr] opacity-0"
+                  isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                 }`}>
                   <div className="overflow-hidden">
-                    <p className="text-xs md:text-sm text-slate-600 leading-relaxed font-normal text-left">
-                      {faq.a}
-                    </p>
+                    <div className="pt-4 mt-4 border-t border-slate-200/50">
+                      <p className="text-xs md:text-sm text-slate-600 leading-relaxed font-normal text-left">
+                        {faq.a}
+                      </p>
+                    </div>
                   </div>
                 </div>
 

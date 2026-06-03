@@ -2,9 +2,10 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AboutHero from "@/components/about/AboutHero";
-import TimelineSection from "@/components/about/TimelineSection";
 import VisionMissionSection from "@/components/about/VisionMissionSection";
 import CoreValuesSection from "@/components/about/CoreValuesSection";
+import Hybrid4LSection from "@/components/about/Hybrid4LSection";
+import HeritageSection from "@/components/about/HeritageSection";
 import { notFound } from "next/navigation";
 
 export default function About() {
@@ -19,11 +20,13 @@ export default function About() {
 
       <AboutHero />
 
-      <TimelineSection />
+      <HeritageSection />
 
       <VisionMissionSection />
 
       <CoreValuesSection />
+
+      <Hybrid4LSection />
 
       <Footer />
     </div>

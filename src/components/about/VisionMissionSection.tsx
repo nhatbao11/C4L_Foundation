@@ -7,39 +7,39 @@ export default function VisionMissionSection() {
   const { lang } = useLanguage();
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-20 md:py-28 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="max-w-[1400px] mx-auto px-6 md:px-12 xl:px-20 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
       {/* Vision */}
-      <div className="bg-[#15803D] rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-white/5 -translate-y-12 translate-x-12"/>
-        <div className="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white/5 translate-y-8 -translate-x-8"/>
+      <div className="lg:col-span-7 bg-[#15803D] rounded-[2rem] p-8 md:p-14 text-white relative overflow-hidden flex flex-col justify-center min-h-[350px]">
+        <div className="absolute top-0 right-0 w-48 h-48 rounded-full bg-white/5 -translate-y-12 translate-x-12"/>
+        <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full bg-white/5 translate-y-8 -translate-x-8"/>
         <div className="relative z-10">
           <span className="text-[10px] font-bold text-emerald-200 uppercase tracking-widest font-mono">
             {lang === "vi" ? "Tầm Nhìn" : "Our Vision"}
           </span>
-          <h2 className="font-display font-extrabold text-2xl md:text-3xl text-white mt-4 leading-tight uppercase tracking-wide">
-            {lang === "vi" ? "Mô hình phát triển bền vững" : "Sustainable Growth Model"}
+          <h2 className="font-display font-extrabold text-2xl md:text-4xl text-white mt-4 leading-tight uppercase tracking-wide">
+            {lang === "vi" ? "Hệ sinh thái tuần hoàn & tự quản" : "Circular & Self-Managed Ecosystem"}
           </h2>
-          <p className="text-white/80 text-sm leading-relaxed mt-5">
+          <p className="text-white/80 text-xs md:text-sm lg:text-base leading-relaxed mt-6">
             {lang === "vi"
-              ? "Xây dựng hệ sinh thái tuần hoàn, nơi cựu sinh viên thành đạt quay lại hỗ trợ tài chính và dẫn dắt thế hệ kế tiếp, duy trì dòng chảy tri thức và trách nhiệm xã hội bền vững."
-              : "Build a circular ecosystem where successful alumni return to financially support and mentor the next generation, sustaining a flow of knowledge and social responsibility."}
+              ? "Trở thành hệ sinh thái phát triển nguồn nhân lực tuần hoàn hàng đầu, nơi các thế hệ sinh viên trưởng thành quay lại đồng hành, dẫn dắt và đầu tư tài chính cho thế hệ kế tiếp, duy trì dòng chảy tri thức và trách nhiệm xã hội bền vững."
+              : "To become a leading circular human capital development ecosystem where grown alumni return to accompany, mentor, and invest in the next generation, maintaining a continuous flow of knowledge and social responsibility."}
           </p>
         </div>
       </div>
 
       {/* Mission + Quote */}
-      <div className="flex flex-col gap-5">
+      <div className="lg:col-span-5 flex flex-col gap-6">
         <div className="bg-emerald-50 border border-emerald-100 rounded-3xl p-8 md:p-10 flex-1">
           <span className="text-[10px] font-bold text-[#15803D] uppercase tracking-widest font-mono">
             {lang === "vi" ? "Sứ Mệnh" : "Our Mission"}
           </span>
           <h2 className="font-display font-extrabold text-xl md:text-2xl text-[#15803D] mt-3 leading-snug uppercase tracking-wide">
-            {lang === "vi" ? "Trao Cơ Hội\nDựng Tương Lai" : "Grant Opportunities\nBuild Futures"}
+            {lang === "vi" ? "Đầu Tư Năng Lực\nKiến Tạo Tự Lập" : "Investing in Capability\nBuilding Self-Reliance"}
           </h2>
           <p className="text-slate-600 text-sm leading-relaxed mt-4">
             {lang === "vi"
-              ? "Tìm kiếm, đồng hành và nâng đỡ các sinh viên vượt khó có khát vọng. Trang bị năng lực nghề nghiệp thực chiến, kỹ năng tự học và thái độ sống tử tế."
-              : "Identify, accompany, and elevate underprivileged students with strong drive. Equip them with career skills, self-learning habits, and ethical values."}
+              ? "Tìm kiếm, đồng hành và đầu tư cơ hội cho sinh viên khó khăn có khát vọng. Chúng tôi rèn luyện bản lĩnh tự lập, trang bị năng lực thực chiến chuyên nghiệp và định hình nền tảng đạo đức tử tế để các em tự đứng vững trên đôi chân của mình."
+              : "Identify, accompany, and invest in motivated, underprivileged students. We cultivate self-reliance, equip them with practical professional capabilities, and build a foundation of integrity so they can stand firmly on their own feet."}
           </p>
         </div>
 
@@ -49,10 +49,10 @@ export default function VisionMissionSection() {
           </svg>
           <p className="text-slate-300 text-xs leading-relaxed italic">
             {lang === "vi"
-              ? "Nhận bảo trợ từ C4L đã thay đổi con đường của tôi — không chỉ về tài chính mà còn về tư duy, kỷ luật và tinh thần trách nhiệm với cộng đồng."
-              : "Being sponsored by C4L changed my path — not just financially, but in mindset, discipline, and responsibility toward the community."}
+              ? "Được C4L đồng hành và đầu tư đã giúp tôi lột xác hoàn toàn — không chỉ giải quyết bài toán tài chính, C4L giúp tôi rèn luyện năng lực thực chiến, tư duy tự quản và bản lĩnh sống tử tế sẵn sàng đáp đền cho thế hệ đàn em đi sau."
+              : "Being accompanied and invested in by C4L changed my path — beyond financial support, C4L helped me build practical competence, self-management, and a pay-it-forward mindset to support the next generation."}
           </p>
-          <div className="mt-3 text-[#4ade80] text-[10px] font-bold uppercase tracking-widest font-mono">— C4L Alumni, Đợt 12</div>
+          <div className="mt-3 text-[#4ade80] text-[10px] font-bold uppercase tracking-widest font-mono">— C4L Alumni, Khóa 12</div>
         </div>
       </div>
     </section>
