@@ -6,7 +6,10 @@ import type { NextRequest } from "next/server";
 const intlMiddleware = createMiddleware(routing);
 
 export function proxy(request: NextRequest) {
-  return intlMiddleware(request);
+  const url = request.nextUrl.pathname;
+  const res = intlMiddleware(request);
+  console.log(`[Proxy] request: ${url} -> status: ${res.status}, rewrite: ${res.headers.get("x-middleware-rewrite")}, redirect: ${res.headers.get("location")}`);
+  return res;
 }
 
 export const config = {

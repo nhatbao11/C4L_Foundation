@@ -73,7 +73,7 @@ npm install
 ```bash
 npm run dev
 ```
-Trang web sẽ chạy tại địa chỉ [http://localhost:3000](http://localhost:3000).
+Trang web sẽ chạy tại địa chỉ [http://localhost:3433](http://localhost:3433).
 
 ### Biên dịch ứng dụng (Production Build):
 ```bash
