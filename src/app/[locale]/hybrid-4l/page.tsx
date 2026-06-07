@@ -17,9 +17,9 @@ export default function Hybrid4L() {
       icon: "💳"
     },
     {
-      title: "Trụ cột 2: Ký túc xá (C4L Home)",
+      title: "Trụ cột 2: Ký túc xá (Cỏ 4 Lá Home)",
       subtitle: "Môi trường nội trú kỷ luật thép",
-      desc: "Sinh viên sinh hoạt tập trung tại ký túc xá C4L Home với nội quy nghiêm ngặt: thức dậy lúc 5:00 sáng, chạy bộ rèn luyện thể chất, tự lập kế hoạch công việc và dọn dẹp vệ sinh ngăn nắp. Rèn luyện kỷ luật là nền tảng để trở thành chuyên gia chỉn chu.",
+      desc: "Sinh viên sinh hoạt tập trung tại ký túc xá Cỏ 4 Lá Home với nội quy nghiêm ngặt: thức dậy lúc 5:00 sáng, chạy bộ rèn luyện thể chất, tự lập kế hoạch công việc và dọn dẹp vệ sinh ngăn nắp. Rèn luyện kỷ luật là nền tảng để trở thành chuyên gia chỉn chu.",
       icon: "🏠"
     },
     {
@@ -42,9 +42,9 @@ export default function Hybrid4L() {
       icon: "💳"
     },
     {
-      title: "Pillar 2: Housing (C4L Home)",
+      title: "Pillar 2: Housing (Co 4 La Home)",
       subtitle: "Disciplined Boarding Environment",
-      desc: "Students live in our structured C4L Home dormitories with strict regulations: 5:00 AM wakeups, daily physical runs, scheduled cleaning, and autonomous tasks. Self-discipline is the foundation of high-caliber professionals.",
+      desc: "Students live in our structured Co 4 La Home dormitories with strict regulations: 5:00 AM wakeups, daily physical runs, scheduled cleaning, and autonomous tasks. Self-discipline is the foundation of high-caliber professionals.",
       icon: "🏠"
     },
     {
@@ -95,7 +95,7 @@ export default function Hybrid4L() {
                 activePillar === idx
                   ? "bg-[#0F623D] border-[#0F623D] text-white shadow-lg"
                   : "bg-slate-50 border-slate-200/60 text-slate-700 hover:bg-slate-100"
-              }`}
+               }`}
             >
               <span className="text-3xl flex-shrink-0">{p.icon}</span>
               <div>
@@ -132,7 +132,7 @@ export default function Hybrid4L() {
 
           <div className="mt-10 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-xs font-bold text-[#0F623D] uppercase tracking-wider">
-              C4L Hybrid 4L Framework
+              Co 4 La Hybrid 4L Framework
             </span>
             <a
               href="/apply"

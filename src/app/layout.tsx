@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://c4lfoundation.org"),
   title: "Quỹ Cỏ 4 Lá",
   description:
-    "C4L Foundation - Hệ sinh thái đầu tư vào con người (Human Capital Investment Ecosystem), nâng đỡ và rèn luyện sinh viên nghèo vượt khó trở thành các Self-Made Professionals.",
+    "Quỹ Cỏ 4 Lá - Hệ sinh thái đầu tư vào con người (Human Capital Investment Ecosystem), nâng đỡ và rèn luyện sinh viên nghèo vượt khó trở thành các Self-Made Professionals.",
   icons: {
     icon: "/logo.png",
   },

@@ -20,7 +20,7 @@ export default function FaqSection() {
   const faqs: FaqItem[] = lang === "vi" ? [
     {
       q: "Địa chỉ văn phòng của Quỹ Cỏ Bốn Lá ở đâu?",
-      a: "Văn phòng Quỹ Cỏ Bốn Lá - C4L Foundation được đặt tại TP. Hồ Chí Minh. Địa chỉ chi tiết và thông tin liên hệ chính thức có ở chân trang của trang web, hoặc bạn có thể liên hệ trực tiếp qua email contact@c4l.org.",
+      a: "Văn phòng Quỹ Cỏ Bốn Lá được đặt tại TP. Hồ Chí Minh. Địa chỉ chi tiết và thông tin liên hệ chính thức có ở chân trang của trang web, hoặc bạn có thể liên hệ trực tiếp qua email contact@c4l.org.",
       icon: (
         <svg className="w-5 h-5 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -48,8 +48,8 @@ export default function FaqSection() {
     }
   ] : [
     {
-      q: "Where is the C4L Foundation office located?",
-      a: "The C4L Foundation office is located in Ho Chi Minh City, Vietnam. Detailed address information can be found in the footer, or you can contact us directly at contact@c4l.org.",
+      q: "Where is the Co 4 La Foundation office located?",
+      a: "The Co 4 La Foundation office is located in Ho Chi Minh City, Vietnam. Detailed address information can be found in the footer, or you can contact us directly at contact@c4l.org.",
       icon: (
         <svg className="w-5 h-5 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -58,8 +58,8 @@ export default function FaqSection() {
       )
     },
     {
-      q: "What is the official bank account of C4L Foundation?",
-      a: "All donation bank account details for C4L Foundation are publicly listed under our 'Transparency' section. C4L guarantees that 100% of donations are directly invested into student training programs.",
+      q: "What is the official bank account of Co 4 La Foundation?",
+      a: "All donation bank account details for Co 4 La Foundation are publicly listed under our 'Transparency' section. Co 4 La guarantees that 100% of donations are directly invested into student training programs.",
       icon: (
         <svg className="w-5 h-5 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
@@ -68,7 +68,7 @@ export default function FaqSection() {
     },
     {
       q: "How does the selection and sponsorship process work?",
-      a: "The screening process consists of 3 stages: (1) Online submission of applicant profiles, (2) Verification of difficulties and self-reliance drive, and (3) Face-to-face interview with the Mentoring Board to assess alignment with C4L values.",
+      a: "The screening process consists of 3 stages: (1) Online submission of applicant profiles, (2) Verification of difficulties and self-reliance drive, and (3) Face-to-face interview with the Mentoring Board to assess alignment with Co 4 La values.",
       icon: (
         <svg className="w-5 h-5 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -92,7 +92,7 @@ export default function FaqSection() {
           <p className="text-slate-500 text-sm md:text-base leading-relaxed mt-4 font-normal max-w-2xl mx-auto">
             {lang === "vi"
               ? "Những thông tin phổ biến nhất về Quỹ Cỏ Bốn Lá được tổng hợp tại đây để giải đáp nhanh các thắc mắc của bạn."
-              : "Common questions and essential details about C4L Foundation collected for quick response."}
+              : "Common questions and essential details about Co 4 La Foundation collected for quick response."}
           </p>
         </div>
 

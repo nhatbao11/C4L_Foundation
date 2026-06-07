@@ -19,7 +19,7 @@ export default function HeroSection() {
     },
     {
       img: "/images/carousel-2.png",
-      title: lang === "vi" ? "C4L Home — Ký Túc Xá Kỷ Luật" : "C4L Home — Disciplined Dormitory",
+      title: lang === "vi" ? "Cỏ 4 Lá Home — Ký Túc Xá Kỷ Luật" : "Co 4 La Home — Disciplined Dormitory",
       desc: lang === "vi"
         ? "Không gian sống tự quản, rèn nếp sống tự chủ, bản lĩnh và kỷ luật cao."
         : "Structured housing environment fostering integrity, cleanliness, and self-rule."
@@ -87,7 +87,7 @@ export default function HeroSection() {
           </div>
 
           <h1 className="font-sans text-4xl sm:text-6xl lg:text-7xl xl:text-[84px] font-black tracking-tight leading-none text-[#0e4b29] uppercase mt-1">
-            CỎ <span className="text-[#15803D] bg-gradient-to-r from-[#15803D] via-emerald-600 to-green-700 bg-clip-text text-transparent">4 LÁ</span>
+            CO <span className="text-[#15803D] bg-gradient-to-r from-[#15803D] via-emerald-600 to-green-700 bg-clip-text text-transparent">4 LA</span>
           </h1>
 
           <div className="mt-1">
@@ -101,8 +101,8 @@ export default function HeroSection() {
 
           <p className="text-slate-600 text-sm md:text-base lg:text-lg xl:text-xl leading-relaxed max-w-xl mt-3 font-normal">
             {lang === "vi"
-              ? "C4L không đơn thuần là quỹ cho học bổng tài chính. Chúng tôi đầu tư cơ hội, kinh nghiệm thực chiến và người dẫn đường (mentor) để đồng hành cùng bạn trên con đường trở thành một chuyên gia tự lập, sống tử tế."
-              : "C4L goes beyond financial aid. We invest capital, practical experience, and professional mentorship to accompany you on the journey to becoming a self-reliant, ethical professional."}
+              ? "Cỏ 4 Lá không đơn thuần là quỹ cho học bổng tài chính. Chúng tôi đầu tư cơ hội, kinh nghiệm thực chiến và người dẫn đường (mentor) để đồng hành cùng bạn trên con đường trở thành một chuyên gia tự lập, sống tử tế."
+              : "Co 4 La goes beyond financial aid. We invest capital, practical experience, and professional mentorship to accompany you on the journey to becoming a self-reliant, ethical professional."}
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mt-5">

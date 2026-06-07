@@ -1,19 +1,19 @@
 export const translations: Record<string, any> = {
   vi: {
     apply: {
-      studentTitle: "Học bổng Đồng đầu tư C4L",
+      studentTitle: "Học bổng Đồng đầu tư Cỏ 4 Lá",
       studentDesc: "Chúng tôi tìm kiếm các bạn sinh viên có ý chí vươn lên, sẵn sàng cam kết học tập, rèn luyện kỷ luật và cống hiến năng lực cho cộng đồng.",
       criteriaTitle: "Tiêu chuẩn tuyển chọn",
       criteria: [
         "Sinh viên đại học năm 1, 2, 3 có hoàn cảnh gia đình khó khăn vượt khó học tốt.",
         "Khát vọng tự lập, mong muốn tự giải quyết vấn đề cá nhân.",
-        "Cam kết duy trì rèn luyện thể chất (chạy bộ) và tham gia KTX kỷ luật C4L Home.",
-        "Đóng góp sức lao động, thực chiến lập trình tại C4L Tech & Marketing Lab."
+        "Cam kết duy trì rèn luyện thể chất (chạy bộ) và tham gia KTX kỷ luật Cỏ 4 Lá Home.",
+        "Đóng góp sức lao động, thực chiến lập trình tại Cỏ 4 Lá Tech & Marketing Lab."
       ],
       studentTab: "Dành cho Sinh Viên",
       partnerTab: "Dành cho Mentor & Đối tác",
       partnerTitle: "Đồng hành xây dựng hệ sinh thái",
-      partnerDesc: "Quỹ C4L chào đón sự đồng hành của các Anh/Chị Mentor, các doanh nghiệp tài trợ và đối tác thực chiến để nâng đỡ thế hệ trẻ tự lập.",
+      partnerDesc: "Quỹ Cỏ 4 Lá chào đón sự đồng hành của các Anh/Chị Mentor, các doanh nghiệp tài trợ và đối tác thực chiến để nâng đỡ thế hệ trẻ tự lập.",
       form: {
         name: "Họ và tên",
         email: "Địa chỉ Email",
@@ -21,7 +21,7 @@ export const translations: Record<string, any> = {
         university: "Trường Đại học / Cao đẳng",
         message: "Nội dung chia sẻ / Đề xuất",
         submit: "Gửi thông tin đăng ký",
-        success: "Thông tin của bạn đã được tiếp nhận. Đội ngũ C4L sẽ phản hồi qua email hoặc số điện thoại trong thời gian sớm nhất."
+        success: "Thông tin của bạn đã được tiếp nhận. Đội ngũ Cỏ 4 Lá sẽ phản hồi qua email hoặc số điện thoại trong thời gian sớm nhất."
       }
     },
     transparency: {
@@ -35,8 +35,8 @@ export const translations: Record<string, any> = {
           cost: "+100%"
         },
         {
-          name: "Vận hành hệ thống C4L",
-          provider: "C4L Student Tech Lab",
+          name: "Vận hành hệ thống Cỏ 4 Lá",
+          provider: "Cỏ 4 Lá Student Tech Lab",
           desc: "Sinh viên tự phát triển phần mềm và duy trì.",
           type: "saving",
           cost: "0đ"
@@ -67,7 +67,7 @@ export const translations: Record<string, any> = {
           value: "8.000.000đ"
         },
         {
-          role: "Quản trị KTX C4L Home",
+          role: "Quản trị KTX Cỏ 4 Lá Home",
           tasks: "Hỗ trợ quản lý vệ sinh, sinh hoạt và kỷ luật.",
           value: "5.000.000đ"
         }
@@ -76,19 +76,19 @@ export const translations: Record<string, any> = {
   },
   en: {
     apply: {
-      studentTitle: "C4L Co-investment Scholarship",
+      studentTitle: "Co 4 La Co-investment Scholarship",
       studentDesc: "We seek students who show relentless determination, willing to commit to discipline, studies, and contributing back to the community.",
       criteriaTitle: "Selection Criteria",
       criteria: [
         "Undergraduate students facing financial challenges with high academic motivation.",
         "A strong drive for self-reliance and autonomous problem solving.",
-        "Commitment to physical fitness (running) and disciplined dormitory life at C4L Home.",
-        "Contribution of skills and labor at C4L Tech & E-commerce Labs."
+        "Commitment to physical fitness (running) and disciplined dormitory life at Co 4 La Home.",
+        "Contribution of skills and labor at Co 4 La Tech & E-commerce Labs."
       ],
       studentTab: "For Students",
       partnerTab: "For Mentors & Partners",
-      partnerTitle: "Accompanying C4L Development",
-      partnerDesc: "C4L welcomes mentors, financial sponsors, and industry partners to guide and co-invest in empowering youth.",
+      partnerTitle: "Accompanying Co 4 La Development",
+      partnerDesc: "Co 4 La welcomes mentors, financial sponsors, and industry partners to guide and co-invest in empowering youth.",
       form: {
         name: "Full Name",
         email: "Email Address",
@@ -96,7 +96,7 @@ export const translations: Record<string, any> = {
         university: "University / College",
         message: "Message / Proposal details",
         submit: "Submit Application",
-        success: "Your application has been received successfully. The C4L team will reach out to you via email or phone shortly."
+        success: "Your application has been received successfully. The Co 4 La team will reach out to you via email or phone shortly."
       }
     },
     transparency: {
@@ -111,7 +111,7 @@ export const translations: Record<string, any> = {
         },
         {
           name: "Platform Maintenance & Dev",
-          provider: "C4L Student Tech Lab",
+          provider: "Co 4 La Student Tech Lab",
           desc: "Built and maintained entirely by students' engineering hours.",
           type: "saving",
           cost: "$0"

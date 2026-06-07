@@ -8,16 +8,16 @@ export default function TimelineSection() {
   const { lang } = useLanguage();
 
   const timeline = lang === "vi" ? [
-    { year: "2019", title: "Khởi Nguồn", desc: "Nhóm cựu thành viên Tony Buổi Sáng đặt nền móng Quỹ C4L, hướng đến mô hình phát triển con người toàn diện và tự lập." },
-    { year: "2020", title: "Kiện Toàn Tổ Chức", desc: "Hoàn thiện quy trình xét duyệt học bổng 3 vòng, thành lập Ban Điều hành, Hội đồng Giám sát và Tổng Thư ký." },
+    { year: "2019", title: "Khởi Nguồn", desc: "Nhóm cựu thành viên Tony Buổi Sáng đặt nền móng Quỹ Cỏ 4 Lá, hướng đến mô hình phát triển con người toàn diện và tự lập." },
+    { year: "2020", title: "Kiện Toàn Tổ Chức", desc: "Hoàn thiện quy trình xét duyệt học bổng 3 vòng, thành làm Ban Điều hành, Hội đồng Giám sát và Tổng Thư ký." },
     { year: "2022", title: "Tăng Trưởng Mạnh Mẽ", desc: "Cộng đồng vượt 200 sinh viên, tổng nguồn vốn đầu tư đạt 8 Tỷ đồng; mở rộng ra các tỉnh miền Trung – Tây Nguyên." },
-    { year: "2023", title: "Phát Triển Bền Vững", desc: "Ra mắt mô hình Hybrid 4L, đưa C4L Tech Lab vào vận hành nhằm tối giản 100% chi phí công nghệ và truyền thông." },
+    { year: "2023", title: "Phát Triển Bền Vững", desc: "Ra mắt mô hình Hybrid 4L, đưa Cỏ 4 Lá Tech Lab vào vận hành nhằm tối giản 100% chi phí công nghệ và truyền thông." },
     { year: "2025+", title: "Mục Tiêu Tương Lai", desc: "Đồng hành lũy kế 500 sinh viên, xây dựng dự án tự tạo doanh thu phát triển quỹ và nhân rộng mô hình Pay-it-Forward." },
   ] : [
-    { year: "2019", title: "Foundation", desc: "Former Tony Buoi Sang alumni laid the groundwork for C4L, envisioning a holistic, self-reliant human capital development model." },
+    { year: "2019", title: "Foundation", desc: "Former Tony Buoi Sang alumni laid the groundwork for Co 4 La, envisioning a holistic, self-reliant human capital development model." },
     { year: "2020", title: "Organizational Structure", desc: "Completed the 3-round scholarship review and formed the Executive Board, Supervisory Council, and Secretary General." },
     { year: "2022", title: "Rapid Growth", desc: "Community grew past 200 students; total investment hit 8 Billion VND; expanded to Central Vietnam and Highlands." },
-    { year: "2023", title: "Sustainable Development", desc: "Launched Hybrid 4L model and activated C4L Tech Lab to eliminate 100% of tech and media overhead costs." },
+    { year: "2023", title: "Sustainable Development", desc: "Launched Hybrid 4L model and activated Co 4 La Tech Lab to eliminate 100% of tech and media overhead costs." },
     { year: "2025+", title: "Future Goals", desc: "Accompany 500 cumulative students, build self-sustaining projects, and scale Pay-it-Forward ecosystem." },
   ];
 
@@ -37,15 +37,15 @@ export default function TimelineSection() {
           </div>
           <p className="text-slate-600 text-xs md:text-sm leading-relaxed font-normal">
             {lang === "vi"
-              ? "Kế thừa tinh thần hỗ trợ từ nguồn cựu sinh viên Tony Buổi Sáng, C4L đã phát triển vượt bậc để xây dựng một hệ sinh thái tuần hoàn phát triển con người trọn vẹn, thúc đẩy bản lĩnh tự lập và năng lực nghề nghiệp thực chiến."
-              : "Inheriting the supportive spirit of Tony Buoi Sang alumni, C4L has expanded significantly to construct a circular human capital ecosystem that fosters professional capability and self-reliance."}
+              ? "Kế thừa tinh thần hỗ trợ từ nguồn cựu sinh viên Tony Buổi Sáng, Cỏ 4 Lá đã phát triển vượt bậc để xây dựng một hệ sinh thái tuần hoàn phát triển con người trọn vẹn, thúc đẩy bản lĩnh tự lập và năng lực nghề nghiệp thực chiến."
+              : "Inheriting the supportive spirit of Tony Buoi Sang alumni, Co 4 La has expanded significantly to construct a circular human capital ecosystem that fosters professional capability and self-reliance."}
           </p>
 
           {/* Premium Visual Frame */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-slate-100 aspect-[4/3] w-full">
             <Image
               src="/images/about_journey_visual.png"
-              alt="C4L Students Collaboration"
+              alt="Cỏ Bốn Lá Students Collaboration"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 35vw"

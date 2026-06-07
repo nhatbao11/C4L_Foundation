@@ -30,7 +30,7 @@ export default function Footer() {
               <div className="bg-white p-0.5 rounded-full">
                 <Image
                   src="/logo.jpg"
-                  alt="C4L Logo"
+                  alt="Cỏ Bốn Lá Logo"
                   width={80}
                   height={80}
                   className="rounded-full object-cover"

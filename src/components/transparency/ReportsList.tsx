@@ -19,8 +19,8 @@ export default function ReportsList() {
       closingBalance: "27.120.440.209 ₫",
       incomeDescVi: "Thu trong tháng 04/2026: Nhận quyên góp từ các Mạnh thường quân (MTQ) trong nước và quốc tế từ ngày 01/04/2026 đến 30/04/2026.",
       incomeDescEn: "Received donations from domestic and international sponsors (MTQs) from April 1 to April 30, 2026.",
-      expenseDescVi: "Chi trong tháng 04/2026: Chi trả học bổng cho 225 sinh viên: 378.458.000 VNĐ; Hoàn thiện ký túc xá C4L đợt 2.",
-      expenseDescEn: "Disbursed scholarship grants to 225 active students: 378,458,000 VND; completed C4L dormitory phase 2 works."
+      expenseDescVi: "Chi trong tháng 04/2026: Chi trả học bổng cho 225 sinh viên: 378.458.000 VNĐ; Hoàn thiện ký túc xá Cỏ 4 Lá đợt 2.",
+      expenseDescEn: "Disbursed scholarship grants to 225 active students: 378,458,000 VND; completed Co 4 La dormitory phase 2 works."
     },
     {
       month: 3,
@@ -43,8 +43,8 @@ export default function ReportsList() {
       onlineAccount: "26.500.000.000 ₫",
       cashAccount: "936.046.662 ₫",
       closingBalance: "27.436.046.662 ₫",
-      incomeDescVi: "Thu trong tháng 02/2026: Đóng góp Tết từ cộng đồng cựu sinh viên C4L và các doanh nghiệp đối tác đồng hành.",
-      incomeDescEn: "Lunar New Year drive sponsorships from C4L alumni networks and partner enterprises.",
+      incomeDescVi: "Thu trong tháng 02/2026: Đóng góp Tết từ cộng đồng cựu sinh viên Cỏ 4 Lá và các doanh nghiệp đối tác đồng hành.",
+      incomeDescEn: "Lunar New Year drive sponsorships from Co 4 La alumni networks and partner enterprises.",
       expenseDescVi: "Chi trong tháng 02/2026: Chi trả học bổng cho 223 sinh viên: 375.748.000 VNĐ; Tổ chức rèn luyện kỹ năng thực chiến.",
       expenseDescEn: "Disbursed scholarship grants to 223 active students: 375,748,000 VND; funded practical lab workshops."
     },
@@ -69,8 +69,8 @@ export default function ReportsList() {
       onlineAccount: "26.500.000.000 ₫",
       cashAccount: "960.837.290 ₫",
       closingBalance: "27.460.837.290 ₫",
-      incomeDescVi: "Thu trong tháng 12/2025: Chiến dịch quyên góp Giáng Sinh và tổng kết năm của Ban liên lạc học viên C4L.",
-      incomeDescEn: "Christmas fund drive and end-of-year contributions gathered by the C4L student liaison committee.",
+      incomeDescVi: "Thu trong tháng 12/2025: Chiến dịch quyên góp Giáng Sinh và tổng kết năm của Ban liên lạc học viên Cỏ 4 Lá.",
+      incomeDescEn: "Christmas fund drive and end-of-year contributions gathered by the Co 4 La student liaison committee.",
       expenseDescVi: "Chi trong tháng 12/2025: Chi hỗ trợ cho 240 trẻ: 409.408.000 VNĐ; Hỗ trợ y tế khẩn cấp và bổ sung dinh dưỡng.",
       expenseDescEn: "Disbursed support to 240 children: 409,408,000 VND; funded emergency healthcare and nutritional support."
     },
@@ -96,7 +96,7 @@ export default function ReportsList() {
       cashAccount: "650.330.000 ₫",
       closingBalance: "25.650.330.000 ₫",
       incomeDescVi: "Thu trong tháng 10/2025: Tài trợ định kỳ của MTQ qua MB Bank và đóng góp của cộng đồng Mentor.",
-      incomeDescEn: "Recurring donor transfers received via MB Bank and funding contributions from C4L mentors.",
+      incomeDescEn: "Recurring donor transfers received via MB Bank and funding contributions from Co 4 La mentors.",
       expenseDescVi: "Chi trong tháng 10/2025: Chi trả bảo trợ học phí kỳ I và hoạt động rèn luyện tư duy thực chiến.",
       expenseDescEn: "Disbursed Semester I tuition support grants and funded practical logic training workshops."
     },

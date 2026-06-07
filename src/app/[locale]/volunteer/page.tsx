@@ -31,7 +31,7 @@ export default function VolunteerPage() {
           <p className="text-emerald-100/90 text-sm md:text-base mt-6 max-w-xl mx-auto leading-relaxed">
             {lang === "vi"
               ? "Quỹ Cỏ Bốn Lá chân thành cảm ơn Bạn đã quan tâm đồng hành cùng Quỹ. Hãy cùng chung tay trao cơ hội và hỗ trợ sinh viên khó khăn vươn lên tự lập."
-              : "C4L Foundation sincerely thanks you for your interest. Join us in providing opportunities and supporting underprivileged students in achieving self-reliance."}
+              : "Co 4 La Foundation sincerely thanks you for your interest. Join us in providing opportunities and supporting underprivileged students in achieving self-reliance."}
           </p>
 
           <div className="mt-8">
@@ -80,8 +80,8 @@ export default function VolunteerPage() {
               </div>
               <p className="text-slate-700 text-xs md:text-sm leading-relaxed font-semibold">
                 {lang === "vi"
-                  ? "Động viên, khuyến khích các em tích cực tham gia rèn luyện tại Ký túc xá C4L Home và các hoạt động công đồng."
-                  : "Encourage students to practice self-discipline at C4L Home dormitory and engage in community outreach."}
+                  ? "Động viên, khuyến khích các em tích cực tham gia rèn luyện tại Ký túc xá Cỏ 4 Lá Home và các hoạt động công đồng."
+                  : "Encourage students to practice self-discipline at Co 4 La Home dormitory and engage in community outreach."}
               </p>
             </div>
           </div>

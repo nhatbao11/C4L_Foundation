@@ -12,28 +12,28 @@ export default function NewsSection() {
     {
       date: "03/03/2026",
       title: "Báo cáo Kiểm toán 2025",
-      desc: "Quỹ Cỏ Bốn Lá - C4L Foundation trân trọng công bố Báo cáo Kiểm toán năm 2025, được thực hiện bởi Công ty TNHH Kiểm toán uy tín.",
+      desc: "Quỹ Cỏ Bốn Lá trân trọng công bố Báo cáo Kiểm toán năm 2025, được thực hiện bởi Công ty TNHH Kiểm toán uy tín.",
       image: "/images/carousel-3.png",
       tag: "Kiểm toán"
     },
     {
       date: "03/03/2026",
       title: "Báo cáo Thường niên năm 2025",
-      desc: "Năm 2025 đánh dấu một chặng đường nhiều ý nghĩa trong hành trình phát triển của Quỹ C4L. Với tinh thần minh bạch, trách nhiệm và trân trọng sự đồng hành.",
+      desc: "Năm 2025 đánh dấu một chặng đường nhiều ý nghĩa trong hành trình phát triển của Quỹ Cỏ 4 Lá. Với tinh thần minh bạch, trách nhiệm và trân trọng sự đồng hành.",
       image: "/images/carousel-2.png",
       tag: "Thường niên"
     },
     {
       date: "11/02/2026",
       title: "Báo cáo Chương trình Thiện nguyện Mentorship THPT",
-      desc: "C4L khởi động năm 2026 với chuỗi Mentorship tại các trường THPT. Chương trình đã trao hơn 59 triệu đồng học bổng và giải thưởng, giúp học sinh định vị bản thân.",
+      desc: "Cỏ 4 Lá khởi động năm 2026 với chuỗi Mentorship tại các trường THPT. Chương trình đã trao hơn 59 triệu đồng học bổng và giải thưởng, giúp học sinh định vị bản thân.",
       image: "/images/mentoring.png",
       tag: "Mentorship"
     },
     {
       date: "07/01/2026",
       title: "Báo cáo Hoạt động và Phát triển Quỹ năm 2025",
-      desc: "Báo cáo tổng kết các chương trình hỗ trợ sinh viên khó khăn tại ký túc xá tự quản C4L Home, các hoạt động đào tạo thực chiến và phát triển năng lực.",
+      desc: "Báo cáo tổng kết các chương trình hỗ trợ sinh viên khó khăn tại ký túc xá tự quản Cỏ 4 Lá Home, các hoạt động đào tạo thực chiến và phát triển năng lực.",
       image: "/images/practical_lab.png",
       tag: "Hoạt động"
     }
@@ -41,28 +41,28 @@ export default function NewsSection() {
     {
       date: "03/03/2026",
       title: "Audit Report 2025",
-      desc: "C4L Foundation proudly announces the Audit Report for 2025, conducted by a reputable independent auditing firm.",
+      desc: "Co 4 La Foundation proudly announces the Audit Report for 2025, conducted by a reputable independent auditing firm.",
       image: "/images/carousel-3.png",
       tag: "Audit"
     },
     {
       date: "03/03/2026",
       title: "Annual Report 2025",
-      desc: "2025 marks a meaningful milestone in C4L's development journey, emphasizing transparency, responsibility, and partnership.",
+      desc: "2025 marks a meaningful milestone in Co 4 La's development journey, emphasizing transparency, responsibility, and partnership.",
       image: "/images/carousel-2.png",
       tag: "Annual"
     },
     {
       date: "11/02/2026",
       title: "Mentorship Charity Program Report",
-      desc: "C4L kickstarted 2026 with a series of high school mentorship workshops, awarding scholarships to help students build self-awareness.",
+      desc: "Co 4 La kickstarted 2026 with a series of high school mentorship workshops, awarding scholarships to help students build self-awareness.",
       image: "/images/mentoring.png",
       tag: "Mentorship"
     },
     {
       date: "07/01/2026",
       title: "Activity & Development Report 2025",
-      desc: "Comprehensive report summarizing support programs for underprivileged students at C4L Home dormitories and practical training labs.",
+      desc: "Comprehensive report summarizing support programs for underprivileged students at Co 4 La Home dormitories and practical training labs.",
       image: "/images/practical_lab.png",
       tag: "Activity"
     }
@@ -95,7 +95,7 @@ export default function NewsSection() {
       <div className="absolute inset-0 z-0 opacity-[0.05] pointer-events-none select-none">
         <Image
           src="/images/carousel-1.png"
-          alt="C4L Background Watermark"
+          alt="Cỏ Bốn Lá Background Watermark"
           fill
           className="object-cover object-center"
           priority

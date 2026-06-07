@@ -86,8 +86,8 @@ export default function Hybrid4LSection() {
           <div className="w-12 h-1 bg-[#15803D] mx-auto mt-4 rounded-full" />
           <p className="text-slate-500 text-sm max-w-xl mx-auto mt-4 leading-relaxed font-medium">
             {lang === "vi"
-              ? "C4L không ban phát học bổng một chiều. Chúng tôi kết hợp đồng bộ 4 trụ cột để phát triển tối đa năng lực tự lập của sinh viên."
-              : "C4L does not award simple financial aid. We offer a comprehensive human capital development suite."}
+              ? "Cỏ 4 Lá không ban phát học bổng một chiều. Chúng tôi kết hợp đồng bộ 4 trụ cột để phát triển tối đa năng lực tự lập của sinh viên."
+              : "Co 4 La does not award simple financial aid. We offer a comprehensive human capital development suite."}
           </p>
         </div>
 

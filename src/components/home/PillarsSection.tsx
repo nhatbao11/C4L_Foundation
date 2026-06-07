@@ -13,7 +13,7 @@ export default function PillarsSection() {
       role: "Sinh Viên",
       title: "Ứng tuyển Học bổng",
       desc: "Dành cho sinh viên hoàn cảnh khó khăn có ý chí vươn lên, sẵn sàng học hỏi thực chiến và cam kết rèn luyện tự lập.",
-      points: ["Học bổng & Hỗ trợ sinh hoạt phí", "Cơ hội ở Ký túc xá C4L Home", "Đào tạo kỹ năng thực chiến (AI, E-com)"],
+      points: ["Học bổng & Hỗ trợ sinh hoạt phí", "Cơ hội ở Ký túc xá Cỏ 4 Lá Home", "Đào tạo kỹ năng thực chiến (AI, E-com)"],
       link: "/apply",
       btnText: "Nộp Hồ Sơ Ngay",
       icon: (
@@ -52,8 +52,8 @@ export default function PillarsSection() {
     {
       role: "Doanh Nghiệp / Nhà Tài Trợ",
       title: "Đồng hành & Tài trợ",
-      desc: "Đầu tư nguồn lực tài chính, cơ hội thực tập hoặc bảo trợ công nghệ giúp C4L duy trì và mở rộng quy mô hệ sinh thái.",
-      points: ["Tài trợ vốn học bổng C4L", "Bảo trợ các Lab thực chiến", "Hợp tác cung ứng nguồn nhân lực"],
+      desc: "Đầu tư nguồn lực tài chính, cơ hội thực tập hoặc bảo trợ công nghệ giúp Cỏ 4 Lá duy trì và mở rộng quy mô hệ sinh thái.",
+      points: ["Tài trợ vốn học bổng Cỏ 4 Lá", "Bảo trợ các Lab thực chiến", "Hợp tác cung ứng nguồn nhân lực"],
       link: "/donate",
       btnText: "Đồng Hành Ngay",
       icon: (
@@ -106,8 +106,8 @@ export default function PillarsSection() {
     {
       role: "Corporates & Donors",
       title: "Corporate Sponsorship",
-      desc: "Sponsor scholarship funds, practical labs, or offer internships to expand C4L's scale.",
-      points: ["Fund C4L scholarships", "Sponsor practical research labs", "Supply-chain recruitment ties"],
+      desc: "Sponsor scholarship funds, practical labs, or offer internships to expand Co 4 La's scale.",
+      points: ["Fund Co 4 La scholarships", "Sponsor practical research labs", "Supply-chain recruitment ties"],
       link: "/donate",
       btnText: "Sponsor / Partner",
       icon: (
@@ -134,7 +134,7 @@ export default function PillarsSection() {
             {lang === "vi" ? "Góc đồng hành" : "Join the Ecosystem"}
           </Badge>
           <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight uppercase text-white mt-6 leading-tight">
-            {lang === "vi" ? "Kiến Tạo Hệ Sinh Thái C4L" : "Build the C4L Ecosystem"}
+            {lang === "vi" ? "Kiến Tạo Hệ Sinh Thái Cỏ 4 Lá" : "Build the Co 4 La Ecosystem"}
           </h2>
           <div className="w-12 h-1 bg-emerald-400 mx-auto mt-4 rounded-full" />
           <p className="text-emerald-100/80 text-sm md:text-base leading-relaxed mt-4 font-normal">

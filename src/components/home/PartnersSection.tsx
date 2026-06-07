@@ -23,7 +23,7 @@ export default function PartnersSection() {
       )
     },
     {
-      name: "C4L TECH LAB",
+      name: "CO 4 LA TECH LAB",
       hoverClass: "hover:text-emerald-600",
       icon: (
         <svg className="w-4 h-4 mr-2 md:w-5 md:h-5" viewBox="0 0 24 24" fill="currentColor">

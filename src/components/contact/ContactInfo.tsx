@@ -112,7 +112,7 @@ export default function ContactInfo() {
             </>
           ) : (
             <>
-              C4L Foundation only accepts donations through the public bank accounts listed on the{" "}
+              Co 4 La Foundation only accepts donations through the public bank accounts listed on the{" "}
               <Link href="/transparency" className="text-[#15803D] font-extrabold hover:underline">
                 Donations page
               </Link>

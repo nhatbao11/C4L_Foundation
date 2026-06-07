@@ -1,8 +1,11 @@
 "use client";
 
 import React from "react";
+import { useLocale } from "next-intl";
 
 export default function Loading() {
+  const locale = useLocale();
+
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white">
       {/* Inline styles for custom minimalist animation keyframes */}
@@ -24,8 +27,8 @@ export default function Loading() {
       <div className="flex flex-col items-center select-none">
         {/* Typographic Logo */}
         <div className="flex flex-col items-center mb-5">
-          <span className="font-sans font-black text-[#0e4b29] text-3xl tracking-tight leading-none">
-            C4L
+          <span className="font-sans font-black text-[#0e4b29] text-2xl tracking-tight leading-none">
+            {locale === "vi" ? "Cỏ 4 Lá" : "Co 4 La"}
           </span>
           <span className="text-[9px] font-black tracking-[0.35em] uppercase text-emerald-800/80 block mt-2 leading-none">
             FOUNDATION

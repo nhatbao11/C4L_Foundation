@@ -17,13 +17,13 @@ export default function JournalGrid({ searchTerm, selectedCategory }: JournalGri
     {
       id: 1,
       titleVi: "QUỸ CỎ BỐN LÁ CẦN TÌM ĐỒNG ĐỘI",
-      titleEn: "C4L FOUNDATION HIRING ANNOUNCEMENT",
+      titleEn: "CO 4 LA FOUNDATION HIRING ANNOUNCEMENT",
       tagVi: "Tuyển dụng",
       tagEn: "Recruitment",
       dateVi: "1 tháng 5, 2026",
       dateEn: "May 1, 2026",
       excerptVi: "Quỹ Cỏ Bốn Lá cần tìm ứng viên phù hợp cho vị trí Giám đốc Điều hành để quản lý vận hành hoạt động tài trợ học tập và kết nối các thế hệ sinh viên.",
-      excerptEn: "C4L Foundation is actively recruiting for the Executive Director role to lead program sponsorships and align alumni connections.",
+      excerptEn: "Co 4 La Foundation is actively recruiting for the Executive Director role to lead program sponsorships and align alumni connections.",
       imageType: "placeholder"
     },
     {
@@ -59,7 +59,7 @@ export default function JournalGrid({ searchTerm, selectedCategory }: JournalGri
       dateVi: "9 tháng 1, 2026",
       dateEn: "January 9, 2026",
       excerptVi: "Quỹ Cỏ Bốn Lá vui mừng công bố danh sách 37 em học sinh có hoàn cảnh đặc biệt khó khăn được phê duyệt nhận học bổng bảo trợ trọn đời đợt 17.",
-      excerptEn: "C4L Foundation is pleased to announce 37 sponsored students approved to join our lifetime learning support initiative in Round 17.",
+      excerptEn: "Co 4 La Foundation is pleased to announce 37 sponsored students approved to join our lifetime learning support initiative in Round 17.",
       imageType: "table-list-1"
     },
     {

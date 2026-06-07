@@ -46,7 +46,7 @@ export default function BudgetCalculator() {
 
           <p className="text-sm text-slate-600 mb-6 leading-relaxed">
             {lang === "vi"
-              ? "Bật/Tắt các công việc dưới đây để xem sinh viên C4L đóng góp công sức thiết thực như thế nào để giúp giảm bớt chi phí mặt bằng và nhân lực cho Quỹ học bổng."
+              ? "Bật/Tắt các công việc dưới đây để xem sinh viên Cỏ Bốn Lá đóng góp công sức thiết thực như thế nào để giúp giảm bớt chi phí mặt bằng và nhân lực cho Quỹ học bổng."
               : "Toggle the categories below to see how student effort offsets corporate operating expenditures for the foundation."}
           </p>
 
@@ -122,8 +122,8 @@ export default function BudgetCalculator() {
         <div className="bg-emerald-50 border border-emerald-700/10 rounded-xl p-5 mt-6">
           <p className="text-xs md:text-sm text-emerald-900 leading-relaxed font-semibold">
             💡 <strong>{lang === "vi" ? "Nhận định chiến lược:" : "Strategic insight:"}</strong> {lang === "vi" 
-              ? "Bằng cách để sinh viên trực tiếp tham gia xây dựng và vận hành dự án, C4L giảm thiểu chi phí cố định xuống mức tối giản. Nhờ đó, 100% dòng tiền quyên góp được chuyển thẳng đến học bổng và ký túc xá cho học viên."
-              : "By engaging students directly in building and managing C4L software, fixed costs are minimized. Consequently, 100% of donor funding goes directly to scholarship grants and housing operations."}
+              ? "Bằng cách để sinh viên trực tiếp tham gia xây dựng và vận hành dự án, Cỏ Bốn Lá giảm thiểu chi phí cố định xuống mức tối giản. Nhờ đó, 100% dòng tiền quyên góp được chuyển thẳng đến học bổng và ký túc xá cho học viên."
+              : "By engaging students directly in building and managing Co 4 La software, fixed costs are minimized. Consequently, 100% of donor funding goes directly to scholarship grants and housing operations."}
           </p>
         </div>
 

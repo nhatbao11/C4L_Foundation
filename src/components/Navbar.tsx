@@ -41,15 +41,15 @@ export default function Navbar() {
           <div className="relative w-12 h-12 md:w-13 md:h-13 flex-shrink-0">
             <Image
               src="/logo.jpg"
-              alt="C4L Logo"
+              alt={lang === "vi" ? "Logo Cỏ 4 Lá" : "Co 4 La Logo"}
               fill
               sizes="52px"
               className="rounded-full object-cover transition-all duration-300 group-hover:scale-105"
             />
           </div>
           <div className="flex flex-col justify-center">
-            <span className="font-sans font-extrabold text-[#0e4b29] text-xl md:text-[22px] tracking-tight leading-none">
-              C4L
+            <span className="font-sans font-extrabold text-[#0e4b29] text-lg md:text-[20px] tracking-tight leading-none">
+              {lang === "vi" ? "Cỏ 4 Lá" : "Co 4 La"}
             </span>
             <span className="text-[8px] md:text-[9px] font-black tracking-[0.25em] uppercase text-emerald-800 block mt-1 leading-none">
               FOUNDATION

@@ -12,13 +12,13 @@ export default function AboutHero() {
     selfReliance: "Tự lập",
     ethics: "Tử tế",
     payItForward: "Đáp đền",
-    title: "4 Trụ cột C4L"
+    title: "4 Trụ cột Cỏ 4 Lá"
   } : {
     competence: "Competence",
     selfReliance: "Self-Reliance",
     ethics: "Ethics",
     payItForward: "Pay-it-forward",
-    title: "C4L 4 Pillars"
+    title: "Co 4 La 4 Pillars"
   };
 
   return (
@@ -37,7 +37,7 @@ export default function AboutHero() {
           {/* Left Column: Mission, Vision, and Origin note */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             <Badge>
-              {lang === "vi" ? "Về Cỏ Bốn Lá" : "About C4L Foundation"}
+              {lang === "vi" ? "Về Cỏ Bốn Lá" : "About Co 4 La Foundation"}
             </Badge>
             
             <h1 className="font-display font-black text-3xl md:text-5xl lg:text-6xl text-white mt-6 uppercase tracking-tight leading-[1.1]">
@@ -62,8 +62,8 @@ export default function AboutHero() {
 
             <p className="text-emerald-100/90 text-sm md:text-base lg:text-lg mt-6 leading-relaxed max-w-xl font-medium">
               {lang === "vi"
-                ? "C4L hoạt động như một hệ sinh thái đầu tư phát triển nguồn vốn con người. Chúng tôi đồng hành, đầu tư vốn học tập, cố vấn chuyên nghiệp và môi trường rèn luyện thực chiến để chuyển hóa tiềm năng thành tự chủ."
-                : "C4L operates as a human capital development ecosystem. We accompany, invest study capital, provide professional mentors, and establish practical training to transform potential into self-reliance."}
+                ? "Cỏ 4 Lá hoạt động như một hệ sinh thái đầu tư phát triển nguồn vốn con người. Chúng tôi đồng hành, đầu tư vốn học tập, cố vấn chuyên nghiệp và môi trường rèn luyện thực chiến để chuyển hóa tiềm năng thành tự chủ."
+                : "Co 4 La operates as a human capital development ecosystem. We accompany, invest study capital, provide professional mentors, and establish practical training to transform potential into self-reliance."}
             </p>
 
             {/* Origin & Succession Note */}
@@ -72,8 +72,8 @@ export default function AboutHero() {
                 {lang === "vi" ? "Kế thừa & Tiếp nối" : "Inheritance & Succession"}
               </strong>
               {lang === "vi"
-                ? "Quỹ C4L kế thừa tinh thần tự lập từ các thế hệ sinh viên Quỹ Tony Buổi Sáng, đồng thời mở rộng tuyển chọn những nhân tố trẻ tiềm năng từ các nguồn chất lượng khác trên cả nước."
-                : "C4L inherits the spirit of self-reliance from the student cohorts of the Tony Buoi Sang Fund, while expanding selection to high-potential young minds nationwide."}
+                ? "Quỹ Cỏ 4 Lá kế thừa tinh thần tự lập từ các thế hệ sinh viên Quỹ Tony Buổi Sáng, đồng thời mở rộng tuyển chọn những nhân tố trẻ tiềm năng từ các nguồn chất lượng khác trên cả nước."
+                : "Co 4 La inherits the spirit of self-reliance from the student cohorts of the Tony Buoi Sang Fund, while expanding selection to high-potential young minds nationwide."}
             </div>
           </div>
 
@@ -127,17 +127,17 @@ export default function AboutHero() {
                 />
               </svg>
 
-              {/* Floating Clover Labels (Outside the inner leaves, aligned with rotations) */}
-              <div className="absolute top-2.5 left-1/2 -translate-x-1/2 bg-white/10 border border-white/20 px-3 py-1 rounded-md text-[9px] md:text-[10px] font-bold text-emerald-200 uppercase tracking-wider shadow-md backdrop-blur-md z-20">
+              {/* Floating Clover Labels (Outside the circle completely, preventing leaf overlap) */}
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white border border-emerald-200/60 px-3 py-1 rounded-xl text-[9px] md:text-[10px] font-extrabold text-[#0e4b29] uppercase tracking-wider shadow-lg z-20">
                 {labels.competence}
               </div>
-              <div className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/10 border border-white/20 px-3 py-1 rounded-md text-[9px] md:text-[10px] font-bold text-emerald-200 uppercase tracking-wider shadow-md backdrop-blur-md z-20">
+              <div className="absolute -right-8 md:-right-14 top-1/2 -translate-y-1/2 bg-white border border-emerald-200/60 px-3 py-1 rounded-xl text-[9px] md:text-[10px] font-extrabold text-[#0e4b29] uppercase tracking-wider shadow-lg z-20">
                 {labels.selfReliance}
               </div>
-              <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 bg-white/10 border border-white/20 px-3 py-1 rounded-md text-[9px] md:text-[10px] font-bold text-emerald-200 uppercase tracking-wider shadow-md backdrop-blur-md z-20">
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white border border-emerald-200/60 px-3 py-1 rounded-xl text-[9px] md:text-[10px] font-extrabold text-[#0e4b29] uppercase tracking-wider shadow-lg z-20">
                 {labels.ethics}
               </div>
-              <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/10 border border-white/20 px-3 py-1 rounded-md text-[9px] md:text-[10px] font-bold text-emerald-200 uppercase tracking-wider shadow-md backdrop-blur-md z-20">
+              <div className="absolute -left-8 md:-left-14 top-1/2 -translate-y-1/2 bg-white border border-emerald-200/60 px-3 py-1 rounded-xl text-[9px] md:text-[10px] font-extrabold text-[#0e4b29] uppercase tracking-wider shadow-lg z-20">
                 {labels.payItForward}
               </div>
 

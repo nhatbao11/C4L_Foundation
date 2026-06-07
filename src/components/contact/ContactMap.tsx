@@ -13,7 +13,7 @@ export default function ContactMap() {
         allowFullScreen={true}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="C4L Office Map Location"
+        title="Co 4 La Office Map Location"
         className="rounded-2xl w-full flex-1 h-full min-h-[380px] lg:min-h-0"
       ></iframe>
     </div>

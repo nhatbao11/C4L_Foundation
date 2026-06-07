@@ -84,15 +84,15 @@ export default function JournalCard({ post, lang, isFeatured = false }: JournalC
             {/* List entries */}
             <div className="relative z-10 font-mono text-[9px] leading-relaxed flex-1 flex flex-col justify-center gap-1.5 my-2">
               <div className="flex justify-between items-center py-0.5 border-b border-white/5">
-                <span className="text-slate-300 font-medium">Nguyễn Thị Anh</span>
+                <span className="text-slate-300 font-medium">Nguyễn Thị A</span>
                 <span className="text-indigo-400 font-bold bg-indigo-500/10 px-1 rounded text-[8px]">Quảng Nam</span>
               </div>
               <div className="flex justify-between items-center py-0.5 border-b border-white/5">
-                <span className="text-slate-300 font-medium">Trần Văn Bình</span>
+                <span className="text-slate-300 font-medium">Trần Văn B</span>
                 <span className="text-indigo-400 font-bold bg-indigo-500/10 px-1 rounded text-[8px]">Quảng Ngãi</span>
               </div>
               <div className="flex justify-between items-center py-0.5">
-                <span className="text-slate-300 font-medium">Lê Hoàng Dũng</span>
+                <span className="text-slate-300 font-medium">Lê Văn C</span>
                 <span className="text-indigo-400 font-bold bg-indigo-500/10 px-1 rounded text-[8px]">Bình Định</span>
               </div>
             </div>
@@ -126,15 +126,15 @@ export default function JournalCard({ post, lang, isFeatured = false }: JournalC
             {/* List */}
             <div className="relative z-10 font-mono text-[9px] leading-relaxed flex-1 flex flex-col justify-center gap-1.5 my-2">
               <div className="flex justify-between items-center py-0.5 border-b border-white/5">
-                <span className="text-slate-300 font-medium">Nguyễn Minh Trí</span>
+                <span className="text-slate-300 font-medium">Nguyễn Văn D</span>
                 <span className="text-emerald-400 font-bold bg-emerald-500/10 px-1 rounded text-[8px]">{lang === "vi" ? "Đã duyệt" : "Approved"}</span>
               </div>
               <div className="flex justify-between items-center py-0.5 border-b border-white/5">
-                <span className="text-slate-300 font-medium">Phan Thị Kim Chi</span>
+                <span className="text-slate-300 font-medium">Phan Thị E</span>
                 <span className="text-emerald-400 font-bold bg-emerald-500/10 px-1 rounded text-[8px]">{lang === "vi" ? "Đã duyệt" : "Approved"}</span>
               </div>
               <div className="flex justify-between items-center py-0.5">
-                <span className="text-slate-300 font-medium">Võ Thành Đạt</span>
+                <span className="text-slate-300 font-medium">Võ Văn F</span>
                 <span className="text-emerald-400 font-bold bg-emerald-500/10 px-1 rounded text-[8px]">{lang === "vi" ? "Đã duyệt" : "Approved"}</span>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function JournalCard({ post, lang, isFeatured = false }: JournalC
             
             <div className="flex items-center justify-between z-10">
               <span className="font-mono text-[8px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded font-bold uppercase">
-                C4L ECOSYSTEM
+                CO 4 LA ECOSYSTEM
               </span>
               <span className="text-[10px] text-emerald-300">☘️</span>
             </div>
@@ -278,7 +278,7 @@ export default function JournalCard({ post, lang, isFeatured = false }: JournalC
 
             <div className="flex items-center justify-between z-10 border-t border-white/10 pt-2 text-[8px] text-emerald-400/70 font-mono">
               <span>{lang === "vi" ? "TỰ CHỦ - TRƯỞNG THÀNH" : "POTENTIAL TO PROF"}</span>
-              <span className="text-emerald-300 font-bold">C4L FOUNDATION</span>
+              <span className="text-emerald-300 font-bold">CO 4 LA FOUNDATION</span>
             </div>
           </div>
         );

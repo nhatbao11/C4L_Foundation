@@ -17,7 +17,7 @@ export default function AuditSteps() {
     },
     {
       title: "3. Tối giản chi phí vận hành",
-      desc: "Toàn bộ nhân sự quản lý kỹ thuật, nội dung và vận hành đều do sinh viên C4L đóng góp công sức, giúp tối giản chi phí về 0."
+      desc: "Toàn bộ nhân sự quản lý kỹ thuật, nội dung và vận hành đều do sinh viên Cỏ Bốn Lá đóng góp công sức, giúp tối giản chi phí về 0."
     }
   ] : [
     {
@@ -30,7 +30,7 @@ export default function AuditSteps() {
     },
     {
       title: "3. Zero Operating Overhead",
-      desc: "System engineering, copywriting, and daily maintenance are handled by C4L students, lowering corporate overhead to zero."
+      desc: "System engineering, copywriting, and daily maintenance are handled by Co 4 La students, lowering corporate overhead to zero."
     }
   ];
 

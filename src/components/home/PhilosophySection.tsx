@@ -43,13 +43,13 @@ export default function PhilosophySection() {
             <div className="space-y-4 text-slate-600 text-sm md:text-base leading-relaxed font-normal mt-2 max-w-2xl">
               <p>
                 {lang === "vi"
-                  ? "Kế thừa và tiếp nối một phần sứ mệnh phát triển sinh viên từ Quỹ Tony Buổi Sáng, C4L định vị mình là một hệ sinh thái đầu tư vốn con người (Human Capital Investment Ecosystem), không đơn thuần là nơi trao tặng tiền học bổng."
-                  : "Inheriting and continuing a part of the student development mission from the Tony Buoi Sang Foundation, C4L defines itself as a human capital investment ecosystem, rather than a traditional charity fund."}
+                  ? "Kế thừa và tiếp nối một phần sứ mệnh phát triển sinh viên từ Quỹ Tony Buổi Sáng, Cỏ 4 Lá định vị mình là một hệ sinh thái đầu tư vốn con người (Human Capital Investment Ecosystem), không đơn thuần là nơi trao tặng tiền học bổng."
+                  : "Inheriting and continuing a part of the student development mission from the Tony Buoi Sang Foundation, Co 4 La defines itself as a human capital investment ecosystem, rather than a traditional charity fund."}
               </p>
               <p>
                 {lang === "vi"
-                  ? "Chúng tôi tin rằng sự giúp đỡ bền vững nhất là trao cơ hội, trang bị năng lực chuyên môn và rèn giũa bản lĩnh tự lập. C4L đồng hành đầu tư vốn học tập, môi trường Ký túc xá kỷ luật, đội ngũ Mentor chuyên gia cùng các dự án thực chiến tại Lab."
-                  : "We believe the most sustainable aid is providing opportunity, equipping students with professional competence, and building self-reliance. C4L invests study capital, disciplined housing, elite mentorship, and practical training."}
+                  ? "Chúng tôi tin rằng sự giúp đỡ bền vững nhất là trao cơ hội, trang bị năng lực chuyên môn và rèn giũa bản lĩnh tự lập. Cỏ 4 Lá đồng hành đầu tư vốn học tập, môi trường Ký túc xá kỷ luật, đội ngũ Mentor chuyên gia cùng các dự án thực chiến tại Lab."
+                  : "We believe the most sustainable aid is providing opportunity, equipping students with professional competence, and building self-reliance. Co 4 La invests study capital, disciplined housing, elite mentorship, and practical training."}
               </p>
             </div>
 

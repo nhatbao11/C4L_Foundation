@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "@/components/LanguageContext";
 
 interface LogoProps {
   className?: string;
@@ -7,11 +8,13 @@ interface LogoProps {
 }
 
 export default function Logo({ className = "", variant = "icon", size = 48 }: LogoProps) {
+  const { lang } = useLanguage();
+
   if (variant === "icon") {
     return (
       <img
         src="/logo.jpg"
-        alt="C4L Logo"
+        alt={lang === "vi" ? "Logo Cỏ 4 Lá" : "Co 4 La Logo"}
         width={size}
         height={size}
         className={`inline-block rounded-full select-none ${className}`}
@@ -25,7 +28,7 @@ export default function Logo({ className = "", variant = "icon", size = 48 }: Lo
     <div className={`flex items-center gap-3.5 select-none ${className}`}>
       <img
         src="/logo.jpg"
-        alt="C4L Logo"
+        alt={lang === "vi" ? "Logo Cỏ 4 Lá" : "Co 4 La Logo"}
         width={size}
         height={size}
         className="flex-shrink-0 rounded-full"
@@ -35,7 +38,7 @@ export default function Logo({ className = "", variant = "icon", size = 48 }: Lo
         className="font-display font-black tracking-wider text-[#0F623D]"
         style={{ fontSize: `${size * 0.42}px`, lineHeight: "1" }}
       >
-        C4L FOUNDATION
+        {lang === "vi" ? "CỎ 4 LÁ FOUNDATION" : "CO 4 LA FOUNDATION"}
       </span>
     </div>
   );

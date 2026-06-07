@@ -104,10 +104,10 @@ export default function ApplicationForm({ initialTab = "student" }: ApplicationF
 
         <div className="mt-12 pt-6 border-t border-emerald-900/50 flex items-center gap-4">
           <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center font-bold text-xs text-emerald-300">
-            C4L
+            {lang === "vi" ? "Cỏ 4 Lá" : "Co 4 La"}
           </div>
           <div>
-            <span className="block text-xs font-bold text-white uppercase tracking-wider">C4L Foundation</span>
+            <span className="block text-xs font-bold text-white uppercase tracking-wider">{lang === "vi" ? "Quỹ Cỏ 4 Lá" : "Co 4 La Foundation"}</span>
             <span className="block text-[10px] text-emerald-400">{lang === "vi" ? "Kiến tạo tương lai" : "Empowering tomorrow"}</span>
           </div>
         </div>
@@ -319,7 +319,7 @@ export default function ApplicationForm({ initialTab = "student" }: ApplicationF
                     rows={3}
                     value={partnerForm.message}
                     onChange={e => setPartnerForm(prev => ({ ...prev, message: e.target.value }))}
-                    placeholder={lang === "vi" ? "Đề xuất nội dung hợp tác hoặc mong muốn đồng hành phát triển cùng Quỹ C4L." : "Describe your proposal details..."}
+                    placeholder={lang === "vi" ? "Đề xuất nội dung hợp tác hoặc mong muốn đồng hành phát triển cùng Quỹ Cỏ 4 Lá." : "Describe your proposal details..."}
                     className="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 focus:border-[#15803D] transition-all text-slate-800 text-sm"
                   ></textarea>
                 </div>

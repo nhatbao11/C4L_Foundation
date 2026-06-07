@@ -62,8 +62,8 @@ export default function JournalHero({
         {/* Subtitle following C4L communication guidelines */}
         <p className="text-white/80 text-xs md:text-sm leading-relaxed mt-5 max-w-2xl mx-auto font-normal">
           {lang === "vi"
-            ? "Đồng hành và chia sẻ hành trình vượt khó tự lập, rèn luyện bản lĩnh và các sự kiện thực chiến ý nghĩa của thế hệ trẻ C4L."
-            : "Accompanying and sharing the self-reliant journey, professional capacity building, and practical events of C4L students."}
+            ? "Đồng hành và chia sẻ hành trình vượt khó tự lập, rèn luyện bản lĩnh và các sự kiện thực chiến ý nghĩa của thế hệ trẻ Cỏ 4 Lá."
+            : "Accompanying and sharing the self-reliant journey, professional capacity building, and practical events of Co 4 La students."}
         </p>
 
         {/* Search Input Box */}
