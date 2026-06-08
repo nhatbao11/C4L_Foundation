@@ -5,4 +5,5 @@ export const routing = defineRouting({
   defaultLocale: "vi",
   // vi → "/" (no prefix), en → "/en/..."
   localePrefix: "as-needed",
+  localeDetection: false,
 });
