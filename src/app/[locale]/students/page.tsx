@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ApplyHero from "@/components/apply/ApplyHero";
-import StudentStats from "@/components/apply/StudentStats";
-import StudentTable from "@/components/apply/StudentTable";
+import ApplyHero from "@/components/students/ApplyHero";
+import StudentStats from "@/components/students/StudentStats";
+import StudentTable from "@/components/students/StudentTable";
 
 export default function Apply() {
   return (

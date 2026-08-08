@@ -7,11 +7,15 @@ import type { Report } from "@/types";
 export default function ReportsList() {
   const { lang } = useLanguage();
   const [selectedYear, setSelectedYear] = useState<string>("All");
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+
+  const categories = ["All", "Thu chi", "Hoạt động", "Khác"];
 
   const reports: Report[] = useMemo(() => [
     {
       month: 4,
       year: 2026,
+      category: "Thu chi",
       totalIncome: "53.218.413.304 ₫",
       totalExpense: "26.097.973.095 ₫",
       onlineAccount: "26.500.000.000 ₫",
@@ -25,6 +29,21 @@ export default function ReportsList() {
     {
       month: 3,
       year: 2026,
+      category: "Hoạt động",
+      totalIncome: "0 ₫",
+      totalExpense: "45.000.000 ₫",
+      onlineAccount: "0 ₫",
+      cashAccount: "0 ₫",
+      closingBalance: "0 ₫",
+      incomeDescVi: "Hoạt động không có thu trực tiếp.",
+      incomeDescEn: "No direct income for this activity.",
+      expenseDescVi: "Chi tổ chức buổi định hướng nghề nghiệp và kỹ năng phỏng vấn cho sinh viên năm 3-4.",
+      expenseDescEn: "Organized career orientation and interview skills workshop for junior/senior students."
+    },
+    {
+      month: 3,
+      year: 2026,
+      category: "Thu chi",
       totalIncome: "52.843.441.471 ₫",
       totalExpense: "25.471.254.645 ₫",
       onlineAccount: "26.500.000.000 ₫",
@@ -38,6 +57,7 @@ export default function ReportsList() {
     {
       month: 2,
       year: 2026,
+      category: "Thu chi",
       totalIncome: "52.421.019.368 ₫",
       totalExpense: "24.984.972.706 ₫",
       onlineAccount: "26.500.000.000 ₫",
@@ -51,6 +71,7 @@ export default function ReportsList() {
     {
       month: 1,
       year: 2026,
+      category: "Thu chi",
       totalIncome: "51.715.442.403 ₫",
       totalExpense: "24.368.806.529 ₫",
       onlineAccount: "26.500.000.000 ₫",
@@ -64,6 +85,7 @@ export default function ReportsList() {
     {
       month: 12,
       year: 2025,
+      category: "Thu chi",
       totalIncome: "51.250.754.102 ₫",
       totalExpense: "23.789.916.812 ₫",
       onlineAccount: "26.500.000.000 ₫",
@@ -77,6 +99,7 @@ export default function ReportsList() {
     {
       month: 11,
       year: 2025,
+      category: "Thu chi",
       totalIncome: "49.595.661.640 ₫",
       totalExpense: "23.191.210.729 ₫",
       onlineAccount: "25.500.000.000 ₫",
@@ -90,6 +113,7 @@ export default function ReportsList() {
     {
       month: 10,
       year: 2025,
+      category: "Thu chi",
       totalIncome: "48.210.450.000 ₫",
       totalExpense: "22.560.120.000 ₫",
       onlineAccount: "25.000.000.000 ₫",
@@ -103,6 +127,7 @@ export default function ReportsList() {
     {
       month: 12,
       year: 2024,
+      category: "Thu chi",
       totalIncome: "42.150.300.000 ₫",
       totalExpense: "19.820.400.000 ₫",
       onlineAccount: "22.000.000.000 ₫",
@@ -116,9 +141,12 @@ export default function ReportsList() {
   ], []);
 
   const filteredReports = useMemo(() => {
-    if (selectedYear === "All") return reports;
-    return reports.filter((r) => r.year === parseInt(selectedYear));
-  }, [reports, selectedYear]);
+    return reports.filter((r) => {
+      const matchYear = selectedYear === "All" || r.year === parseInt(selectedYear);
+      const matchCategory = selectedCategory === "All" || r.category === selectedCategory;
+      return matchYear && matchCategory;
+    });
+  }, [reports, selectedYear, selectedCategory]);
 
   const years = useMemo(() => {
     const list = new Set(reports.map((r) => r.year));
@@ -137,8 +165,27 @@ export default function ReportsList() {
           </h2>
         </div>
 
-        {/* Year Select Pills */}
-        <div className="flex flex-wrap gap-2">
+        {/* Filters */}
+        <div className="flex flex-col gap-3">
+          {/* Category Tabs */}
+          <div className="flex flex-wrap gap-2">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all border ${
+                  selectedCategory === cat
+                    ? "bg-slate-800 border-slate-800 text-white shadow-sm"
+                    : "bg-white border-slate-200 text-slate-600 hover:bg-slate-50"
+                }`}
+              >
+                {cat === "All" ? (lang === "vi" ? "Tất cả danh mục" : "All Categories") : cat}
+              </button>
+            ))}
+          </div>
+
+          {/* Year Select Pills */}
+          <div className="flex flex-wrap gap-2">
           {years.map((year) => (
             <button
               key={year.toString()}
@@ -174,10 +221,12 @@ export default function ReportsList() {
                 {/* Right Side Slanted Brand Color Card */}
                 <div
                   style={{ clipPath: "polygon(14% 0, 100% 0, 100% 100%, 0% 100%)" }}
-                  className="absolute inset-y-0 right-0 w-[46%] bg-[#15803D] flex flex-col justify-center pl-6 pr-3 text-white z-10"
+                  className={`absolute inset-y-0 right-0 w-[46%] flex flex-col justify-center pl-6 pr-3 text-white z-10 ${
+                    report.category === "Thu chi" ? "bg-[#15803D]" : report.category === "Hoạt động" ? "bg-blue-600" : "bg-purple-600"
+                  }`}
                 >
                   <span className="font-display font-black text-[11px] md:text-[12px] tracking-wide uppercase leading-tight">
-                    {lang === "vi" ? "BÁO CÁO THU CHI" : "BALANCE SHEET"}
+                    {lang === "vi" ? (report.category === "Thu chi" ? "BÁO CÁO THU CHI" : "BÁO CÁO HOẠT ĐỘNG") : (report.category === "Thu chi" ? "BALANCE SHEET" : "ACTIVITY REPORT")}
                   </span>
                   <span className="text-[10px] text-emerald-200 mt-1 font-bold">
                     {lang === "vi"

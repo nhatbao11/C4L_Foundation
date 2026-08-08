@@ -13,30 +13,30 @@ export default function StudentTable() {
 
   // Raw mock database of students
   const rawStudents: Student[] = useMemo(() => [
-    { id: "SV001", name: "Nguyễn Thị A", birthYear: 2004, gender: "Nữ", province: "Quảng Nam", status: "Đang nhận bảo trợ" },
-    { id: "SV002", name: "Trần Văn B", birthYear: 2003, gender: "Nam", province: "Quảng Nam", status: "Đang nhận bảo trợ" },
-    { id: "QTN001", name: "Phùng Thị C", birthYear: 2005, gender: "Nữ", province: "Quảng Nam", status: "Chấm dứt bảo trợ" },
-    { id: "QTN002", name: "Trần Thị D", birthYear: 2004, gender: "Nữ", province: "Quảng Nam", status: "Đang nhận bảo trợ" },
-    { id: "QTN003", name: "Trần Văn E", birthYear: 2003, gender: "Nam", province: "Quảng Nam", status: "Đang nhận bảo trợ" },
-    { id: "QTN004", name: "Nguyễn Thị F", birthYear: 2005, gender: "Nữ", province: "Hà Tĩnh", status: "Đang nhận bảo trợ" },
-    { id: "QTN005", name: "Nguyễn Thị G", birthYear: 2006, gender: "Nữ", province: "Hà Tĩnh", status: "Đang nhận bảo trợ" },
-    { id: "QTN006", name: "Nguyễn Thị H", birthYear: 2004, gender: "Nữ", province: "Hà Tĩnh", status: "Hoàn thành bảo trợ" },
-    { id: "QTN007", name: "Nguyễn Thị I", birthYear: 2005, gender: "Nữ", province: "Hà Tĩnh", status: "Đang nhận bảo trợ" },
-    { id: "QTN008", name: "Nguyễn Văn J", birthYear: 2003, gender: "Nam", province: "Hà Tĩnh", status: "Chấm dứt bảo trợ" },
-    { id: "QTN009", name: "Trần Thị K", birthYear: 2004, gender: "Nữ", province: "Quảng Nam", status: "Hoàn thành bảo trợ" },
-    { id: "QTN010", name: "Trần Thị L", birthYear: 2005, gender: "Nữ", province: "Quảng Nam", status: "Đang nhận bảo trợ" },
-    { id: "QTN011", name: "Trần Văn M", birthYear: 2006, gender: "Nam", province: "Quảng Nam", status: "Chấm dứt bảo trợ" },
-    { id: "QTN012", name: "Lê Văn N", birthYear: 2003, gender: "Nam", province: "Quảng Trị", status: "Hoàn thành bảo trợ" },
-    { id: "QTN013", name: "Lê Văn O", birthYear: 2004, gender: "Nam", province: "Quảng Trị", status: "Hoàn thành bảo trợ" },
-    { id: "QTN014", name: "Dương Thị P", birthYear: 2005, gender: "Nữ", province: "Thừa Thiên Huế", status: "Đang nhận bảo trợ" },
-    { id: "QTN015", name: "Dương Thị Q", birthYear: 2006, gender: "Nữ", province: "Thừa Thiên Huế", status: "Đang nhận bảo trợ" },
-    { id: "QTN016", name: "Lê Văn R", birthYear: 2004, gender: "Nam", province: "Thừa Thiên Huế", status: "Đang nhận bảo trợ" },
-    { id: "QTN017", name: "Lê Thị S", birthYear: 2005, gender: "Nữ", province: "Thừa Thiên Huế", status: "Chấm dứt bảo trợ" },
-    { id: "QTN018", name: "Đỗ Văn T", birthYear: 2003, gender: "Nam", province: "Quảng Bình", status: "Đang nhận bảo trợ" },
-    { id: "QTN019", name: "Đặng Văn U", birthYear: 2005, gender: "Nam", province: "Quảng Bình", status: "Đang nhận bảo trợ" },
-    { id: "QTN020", name: "Đoàn Văn V", birthYear: 2004, gender: "Nam", province: "Quảng Bình", status: "Hoàn thành bảo trợ" },
-    { id: "SV003", name: "Trịnh Văn W", birthYear: 2004, gender: "Nam", province: "TP. Hồ Chí Minh", status: "Đang nhận bảo trợ" },
-    { id: "SV004", name: "Lâm Thị X", birthYear: 2005, gender: "Nữ", province: "TP. Hồ Chí Minh", status: "Hoàn thành bảo trợ" }
+    { id: "SV001", name: "Nguyễn Thị A", birthYear: 2004, gender: "Nữ", province: "Quảng Nam", university: "ĐH Khoa học Tự nhiên", gpa: "3.8", status: "Đang nhận bảo trợ" },
+    { id: "SV002", name: "Trần Văn B", birthYear: 2003, gender: "Nam", province: "Quảng Nam", university: "ĐH Bách Khoa", gpa: "3.5", status: "Đang nhận bảo trợ" },
+    { id: "QTN001", name: "Phùng Thị C", birthYear: 2005, gender: "Nữ", province: "Quảng Nam", university: "ĐH Kinh tế Luật", gpa: "3.2", status: "Chấm dứt bảo trợ" },
+    { id: "QTN002", name: "Trần Thị D", birthYear: 2004, gender: "Nữ", province: "Quảng Nam", university: "ĐH Y Dược TP.HCM", gpa: "3.9", status: "Đang nhận bảo trợ" },
+    { id: "QTN003", name: "Trần Văn E", birthYear: 2003, gender: "Nam", province: "Quảng Nam", university: "ĐH Sư phạm Kỹ thuật", gpa: "3.4", status: "Đang nhận bảo trợ" },
+    { id: "QTN004", name: "Nguyễn Thị F", birthYear: 2005, gender: "Nữ", province: "Hà Tĩnh", university: "ĐH Ngoại Thương", gpa: "3.7", status: "Đang nhận bảo trợ" },
+    { id: "QTN005", name: "Nguyễn Thị G", birthYear: 2006, gender: "Nữ", province: "Hà Tĩnh", university: "ĐH Kinh tế Quốc dân", gpa: "3.6", status: "Đang nhận bảo trợ" },
+    { id: "QTN006", name: "Nguyễn Thị H", birthYear: 2004, gender: "Nữ", province: "Hà Tĩnh", university: "ĐH Bách Khoa", gpa: "3.1", status: "Hoàn thành bảo trợ" },
+    { id: "QTN007", name: "Nguyễn Thị I", birthYear: 2005, gender: "Nữ", province: "Hà Tĩnh", university: "ĐH Khoa học Tự nhiên", gpa: "3.8", status: "Đang nhận bảo trợ" },
+    { id: "QTN008", name: "Nguyễn Văn J", birthYear: 2003, gender: "Nam", province: "Hà Tĩnh", university: "ĐH Xây dựng", gpa: "2.9", status: "Chấm dứt bảo trợ" },
+    { id: "QTN009", name: "Trần Thị K", birthYear: 2004, gender: "Nữ", province: "Quảng Nam", university: "ĐH Y Dược Huế", gpa: "3.5", status: "Hoàn thành bảo trợ" },
+    { id: "QTN010", name: "Trần Thị L", birthYear: 2005, gender: "Nữ", province: "Quảng Nam", university: "ĐH Sư phạm", gpa: "3.3", status: "Đang nhận bảo trợ" },
+    { id: "QTN011", name: "Trần Văn M", birthYear: 2006, gender: "Nam", province: "Quảng Nam", university: "ĐH Bách Khoa", gpa: "2.8", status: "Chấm dứt bảo trợ" },
+    { id: "QTN012", name: "Lê Văn N", birthYear: 2003, gender: "Nam", province: "Quảng Trị", university: "ĐH Bách Khoa", gpa: "3.4", status: "Hoàn thành bảo trợ" },
+    { id: "QTN013", name: "Lê Văn O", birthYear: 2004, gender: "Nam", province: "Quảng Trị", university: "ĐH Giao thông Vận tải", gpa: "3.2", status: "Hoàn thành bảo trợ" },
+    { id: "QTN014", name: "Dương Thị P", birthYear: 2005, gender: "Nữ", province: "Thừa Thiên Huế", university: "ĐH Kinh tế", gpa: "3.6", status: "Đang nhận bảo trợ" },
+    { id: "QTN015", name: "Dương Thị Q", birthYear: 2006, gender: "Nữ", province: "Thừa Thiên Huế", university: "ĐH Luật", gpa: "3.5", status: "Đang nhận bảo trợ" },
+    { id: "QTN016", name: "Lê Văn R", birthYear: 2004, gender: "Nam", province: "Thừa Thiên Huế", university: "ĐH Bách Khoa", gpa: "3.1", status: "Đang nhận bảo trợ" },
+    { id: "QTN017", name: "Lê Thị S", birthYear: 2005, gender: "Nữ", province: "Thừa Thiên Huế", university: "ĐH Sư phạm", gpa: "3.0", status: "Chấm dứt bảo trợ" },
+    { id: "QTN018", name: "Đỗ Văn T", birthYear: 2003, gender: "Nam", province: "Quảng Bình", university: "ĐH Kiến trúc", gpa: "3.3", status: "Đang nhận bảo trợ" },
+    { id: "QTN019", name: "Đặng Văn U", birthYear: 2005, gender: "Nam", province: "Quảng Bình", university: "ĐH Khoa học Tự nhiên", gpa: "3.7", status: "Đang nhận bảo trợ" },
+    { id: "QTN020", name: "Đoàn Văn V", birthYear: 2004, gender: "Nam", province: "Quảng Bình", university: "ĐH Nông Lâm", gpa: "3.4", status: "Hoàn thành bảo trợ" },
+    { id: "SV003", name: "Trịnh Văn W", birthYear: 2004, gender: "Nam", province: "TP. Hồ Chí Minh", university: "ĐH Bách Khoa", gpa: "3.8", status: "Đang nhận bảo trợ" },
+    { id: "SV004", name: "Lâm Thị X", birthYear: 2005, gender: "Nữ", province: "TP. Hồ Chí Minh", university: "ĐH Quốc Tế", gpa: "3.9", status: "Hoàn thành bảo trợ" }
   ], []);
 
   // Distinct Provinces for Dropdown
@@ -165,12 +165,12 @@ export default function StudentTable() {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="border-b border-slate-200 bg-slate-50/50 text-[10px] md:text-xs font-bold text-slate-400 tracking-wider uppercase">
-                <th className="py-4 px-6 font-semibold">{lang === "vi" ? "Mã hồ sơ" : "File ID"}</th>
+                <th className="py-4 px-6 font-semibold">{lang === "vi" ? "Mã HS" : "ID"}</th>
                 <th className="py-4 px-6 font-semibold">{lang === "vi" ? "Họ và tên sinh viên" : "Full Name"}</th>
-                <th className="py-4 px-6 font-semibold text-center">{lang === "vi" ? "Năm sinh" : "Year of Birth"}</th>
-                <th className="py-4 px-6 font-semibold text-center">{lang === "vi" ? "Giới tính" : "Gender"}</th>
-                <th className="py-4 px-6 font-semibold">{lang === "vi" ? "Tỉnh thành" : "Province"}</th>
+                <th className="py-4 px-6 font-semibold">{lang === "vi" ? "Trường" : "University"}</th>
+                <th className="py-4 px-6 font-semibold text-center">GPA</th>
                 <th className="py-4 px-6 font-semibold text-center">{lang === "vi" ? "Trạng thái" : "Status"}</th>
+                <th className="py-4 px-6 font-semibold text-right">{lang === "vi" ? "Hồ sơ" : "Profile"}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100 text-slate-700 text-xs md:text-sm">
@@ -179,11 +179,8 @@ export default function StudentTable() {
                   <tr key={idx} className="hover:bg-slate-50/50 transition-colors duration-150">
                     <td className="py-4 px-6 font-mono font-bold text-emerald-800">{student.id}</td>
                     <td className="py-4 px-6 font-semibold text-slate-900">{student.name}</td>
-                    <td className="py-4 px-6 text-center font-medium text-slate-500">{student.birthYear}</td>
-                    <td className="py-4 px-6 text-center font-semibold text-slate-600">
-                      {lang === "vi" ? student.gender : student.gender === "Nam" ? "Male" : "Female"}
-                    </td>
-                    <td className="py-4 px-6 font-medium text-slate-600">{student.province}</td>
+                    <td className="py-4 px-6 font-medium text-slate-600">{student.university}</td>
+                    <td className="py-4 px-6 text-center font-bold text-slate-800">{student.gpa}</td>
                     <td className="py-4 px-6 text-center">
                       <span
                         className={`inline-flex items-center px-3 py-1 rounded-full text-[10px] md:text-xs font-bold border transition-colors ${
@@ -205,6 +202,19 @@ export default function StudentTable() {
                         ></span>
                         {getStatusText(student.status)}
                       </span>
+                    </td>
+                    <td className="py-4 px-6 text-right">
+                      <a
+                        href={`/pdfs/${student.id}.pdf`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 hover:text-emerald-800 px-3 py-1.5 rounded-lg transition-colors border border-emerald-200"
+                      >
+                        {lang === "vi" ? "Chi tiết" : "View"}
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
                     </td>
                   </tr>
                 ))

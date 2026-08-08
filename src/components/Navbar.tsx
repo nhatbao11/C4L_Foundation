@@ -21,9 +21,9 @@ export default function Navbar() {
 
   const menuItems = [
     { label: t("about"), href: "/about" },
-    { label: t("students"), href: "/apply" },
-    { label: t("reports"), href: "/transparency" },
     { label: t("journal"), href: "/journal" },
+    { label: t("students"), href: "/students" },
+    { label: t("reports"), href: "/transparency" },
     { label: t("contact"), href: "/contact" },
   ];
 

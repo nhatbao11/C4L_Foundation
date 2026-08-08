@@ -30,12 +30,15 @@ export interface Student {
   birthYear: number;
   gender: "Nam" | "Nữ";
   province: string;
+  university: string;
+  gpa: string;
   status: "Đang nhận bảo trợ" | "Hoàn thành bảo trợ" | "Chấm dứt bảo trợ";
 }
 
 export interface Report {
   month: number;
   year: number;
+  category: "Thu chi" | "Hoạt động" | "Khác";
   totalIncome: string;
   totalExpense: string;
   onlineAccount: string;
