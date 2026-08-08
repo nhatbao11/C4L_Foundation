@@ -200,6 +200,7 @@ export default function ReportsList() {
             </button>
           ))}
         </div>
+        </div>
       </div>
 
       {/* 3-Column Report Grid */}
